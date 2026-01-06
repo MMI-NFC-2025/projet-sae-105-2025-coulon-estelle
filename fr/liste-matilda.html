@@ -17,17 +17,23 @@
 <body>
 
 <header class="header">
-  <a href="/index.html" class="logo" aria-label="Accueil">
+  <a href="/index.html" class="header__logo" aria-label="Accueil Jocelyn Bell">
     <img src="/assets/icons/Logo.svg" alt="Logo Jocelyn Bell">
   </a>
 
-  <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">
+  <a href="/index-en.html" class="header__logo"  aria-label="Accueil Jocelyn Bell">
+        <img src="/assets/icons/icons-24x24/Globe.svg" alt="Logo Jocelyn Bell">
+  </a>
+
+  <h3 class="header__title">Jocelyn Bell</h3>
+
+  <button class="header__menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
     <span></span>
     <span></span>
     <span></span>
   </button>
 
-  <nav id="menu" class="nav" aria-label="Navigation principale">
+  <nav class="nav" id="main-nav" aria-label="Navigation principale">
     <ul>
       <li><a href="/fr/matilda.html">Jocelyn Bell</a></li>
       <li><a href="/fr/livre.html">Astronomie, l’essentiel tout simplement</a></li>
@@ -45,49 +51,52 @@
 <main class="page-wrap">
 
   <section class="hero">
-    <div class="image">
-      <img src="/assets/img/head/liste-matilda.webp" alt="" aria-hidden="true">
+
+    <div class="hero__content">
+      <img src="/assets/img/head/liste-matilda.webp" alt="Liste des femmes scientifiques oubliées" class="hero__portrait">
+
+      <h1>La liste des « Matilda »</h1>
+      <h3>Ces femmes scientifiques oubliées</h3>
+
+      <p class="hero__subtitle">
+        Ces femmes scientifiques dont les découvertes révolutionnaires ont été attribuées à leurs collègues masculins. Découvrez leurs histoires et l'impact du phénomène appelé l'effet Matilda sur la reconnaissance scientifique.
+      </p>
+
+      <a href="/fr/matilda.html" class="btn btn--primary">Découvrir leur histoire</a>
     </div>
-
-    <h1>La liste des « Matilda »</h1>
-    <h3>Ces femmes scientifiques oubliées</h3>
-
-    <p>
-      Ces femmes scientifiques dont les découvertes révolutionnaires ont été attribuées à leurs collègues masculins.
-    </p>
   </section>
 
-  <section class="card-list__matilda">
+  <section class="card-list__matilda" role="list" aria-label="Liste des femmes scientifiques victimes de l'effet Matilda">
 
-    <article class="card__matilda">
+    <article class="card__matilda" role="listitem">
       <h2>Nettie Stevens</h2>
       <p>Chromosomes sexuels</p>
       <p>1905</p>
       <p>Éclipsée par Edmund Wilson</p>
     </article>
 
-    <article class="card__matilda">
+    <article class="card__matilda" role="listitem">
       <h2>Lise Meitner</h2>
       <p>Fission nucléaire</p>
       <p>1938</p>
       <p>Nobel donné à Otto Hahn seul</p>
     </article>
 
-    <article class="card__matilda">
+    <article class="card__matilda" role="listitem">
       <h2>Rosalind Franklin</h2>
       <p>Structure de l’ADN</p>
       <p>1952</p>
       <p>Travaux utilisés sans son consentement</p>
     </article>
 
-    <article class="card__matilda">
+    <article class="card__matilda" role="listitem">
       <h2>Chien-Shiung Wu</h2>
       <p>Non-conservation de la parité</p>
       <p>1956</p>
       <p>Nobel attribué à ses collègues masculins</p>
     </article>
 
-    <article class="card__matilda">
+    <article class="card__matilda" role="listitem">
       <h2>Jocelyn Bell Burnell</h2>
       <p>Découverte des pulsars</p>
       <p>1967</p>
@@ -111,41 +120,41 @@
 </main>
 
 <footer class="footer">
-  <div class="footer-content">
+  <div class="footer__content">
 
-    <div class="footer-brand">
+    <section class="footer__section">
       <img src="/assets/icons/Logo.svg" alt="Logo Jocelyn Bell">
-      <p class="footer-title">Jocelyn Bell</p>
-    </div>
+      <h3>Jocelyn Bell</h3>
+    </section>
 
-    <div class="footer-col">
-      <p class="footer-title">Liens utiles</p>
+    <section class="footer__section">
+      <h3>Liens utiles</h3>
       <ul>
         <li><a href="/fr/a-propos.html">À propos</a></li>
         <li><a href="/fr/contact.html">Contact</a></li>
         <li><a href="/fr/glossaire.html">Glossaire</a></li>
-        <li><a href="https://www.iut-nfc.univ-fcomte.fr/">Mention légale</a></li>
+        <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Mention légale</a></li>
       </ul>
-    </div>
+    </section>
 
-    <div class="footer-col">
-      <p class="footer-title">Projet pédagogique</p>
+    <section class="footer__section">
+      <h3>Projet pédagogique</h3>
       <ul>
-        <li><a href="https://www.iut-nfc.univ-fcomte.fr/">Département MMI de Montbéliard</a></li>
-        <li><a href="https://www.iut-nfc.univ-fcomte.fr/">Université Marie & Louis Pasteur</a></li>
+        <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Département MMI de Montbéliard</a></li>
+        <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Université Marie & Louis Pasteur</a></li>
       </ul>
-    </div>
+    </section>
 
-    <div class="footer-col">
-      <p class="footer-title">Réseaux sociaux</p>
-      <ul class="social">
-        <li><a href="#" aria-label="Facebook"><img src="/assets/icons/icons-29x29/Facebook.svg" alt=""></a></li>
-        <li><a href="#" aria-label="Instagram"><img src="/assets/icons/icons-29x29/Instagram.svg" alt=""></a></li>
-        <li><a href="#" aria-label="X"><img src="/assets/icons/icons-29x29/X.svg" alt=""></a></li>
+    <section class="footer__section">
+      <h3>Réseaux sociaux</h3>
+      <ul class="footer__social">
+        <li><a href="#" aria-label="Facebook" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/Facebook.svg" alt=""></a></li>
+        <li><a href="#" aria-label="Instagram" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/Instagram.svg" alt=""></a></li>
+        <li><a href="#" aria-label="X" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/X.svg" alt=""></a></li>
       </ul>
-    </div>
+    </section>
 
-    <p class="footer-bottom">
+    <p class="footer__bottom">
       © 2025 Jocelyn Bell – Projet réalisé par Estelle Coulon dans le cadre d’un projet individuel de S1 au département MMI de Montbéliard
     </p>
 
@@ -156,3 +165,4 @@
 
 </body>
 </html>
+

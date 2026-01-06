@@ -1,0 +1,154 @@
+/* =========================================================
+   FOOTER — version finale alignée (comme image 1)
+   ========================================================= */
+
+.footer{
+  margin-top: 60px;
+  padding: 36px 0 24px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(13, 8, 45, 0.95),
+    rgba(27, 36, 73, 0.95)
+  );
+  border-top: 1px solid rgba(140, 60, 239, 0.35);
+}
+
+/* contenu */
+.footer__content{
+  width: 100%;
+  padding: 0 20px;
+  display: grid;
+  gap: 18px; /* serré */
+}
+
+/* sections */
+.footer__section{
+  padding: 0;
+  background: none;
+  border: 0;
+}
+
+/* logo + titre */
+.footer__section:first-child{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__section img{
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+}
+
+/* titres */
+.footer__section h3{
+  margin: 0 0 6px;
+  font-family: var(--font-family-audiowide);
+  font-size: var(--font-size-13);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--pink-candy);
+}
+
+/* listes */
+.footer__section ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 6px; /* très serré */
+}
+
+/* liens */
+.footer__section a{
+  color: var(--purple);
+  font-size: var(--font-size-13);
+  opacity: 0.9;
+  padding: 0;
+}
+
+.footer__section a:hover{
+  color: var(--pink-candy);
+}
+
+/* texte simple */
+.footer__section p{
+  margin: 0;
+  color: var(--purple);
+  font-size: var(--font-size-13);
+  line-height: 1.4;
+}
+
+
+/* =========================
+   SOCIAL — icônes brutes alignées
+   ========================= */
+
+.footer__social{
+  display: flex;
+  flex-direction: row;      /* horizontal */
+  align-items: center;
+  gap: 14px;
+  margin-top: 6px;
+
+  flex-wrap: nowrap;        /* ➜ empêche tout retour à la ligne */
+}
+
+/* liens */
+.footer__social a{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  margin: 0;
+
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+
+  flex-shrink: 0;           /* ➜ empêche l'icône d'être compressée verticalement */
+}
+
+/* ICÔNE PURE (pas de rond, pas de fond) */
+.footer__social .icon{
+  width: 26px;
+  height: 26px;
+
+  background: linear-gradient(
+    90deg,
+    var(--pink-candy) 0%,
+    var(--purple) 55%,
+    var(--ocean-blue) 100%
+  );
+
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+
+          mask-position: center;
+          mask-size: contain;
+          mask-repeat: no-repeat;
+
+  filter: drop-shadow(0 0 10px rgba(236, 111, 253, 0.45));
+}
+
+/* hover clean */
+.footer__social a:hover .icon{
+  transform: scale(1.12);
+  filter: drop-shadow(0 0 16px rgba(236, 111, 253, 0.65));
+  transition: transform 0.15s ease;
+}
+
+.footer__social img{
+  display: block;
+  width: 34px;
+  height: 34px;
+
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}

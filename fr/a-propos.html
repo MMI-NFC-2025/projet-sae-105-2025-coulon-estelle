@@ -3,31 +3,37 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Glossaire</title>
+  <title>À propos</title>
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
   <link rel="manifest" href="/assets/favicon/site.webmanifest">
 
-  <meta name="description" content="Glossaire : liste de termes à expliquer ou à approfondir autour de l’astronomie et de l’effet Matilda.">
+  <meta name="description" content="Découvrez le projet Jocelyn Bell : un site pédagogique sur l'effet Matilda et les femmes scientifiques oubliées.">
   <link rel="stylesheet" href="/src/css/style.css">
 </head>
 
-<body class="glossaire">
+<body>
 
 <header class="header">
-  <a href="/index.html" class="logo" aria-label="Accueil">
+  <a href="/index.html" class="header__logo" aria-label="Accueil Jocelyn Bell">
     <img src="/assets/icons/Logo.svg" alt="Logo Jocelyn Bell">
   </a>
 
-  <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">
+  <a href="/index-en.html" class="header__logo"  aria-label="Accueil Jocelyn Bell">
+        <img src="/assets/icons/icons-24x24/Globe.svg" alt="Logo Jocelyn Bell">
+  </a>
+
+  <h3 class="header__title">Jocelyn Bell</h3>
+
+  <button class="header__menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
     <span></span>
     <span></span>
     <span></span>
   </button>
 
-  <nav id="menu" class="nav" aria-label="Navigation principale">
+  <nav class="nav" id="main-nav" aria-label="Navigation principale">
     <ul>
       <li><a href="/fr/matilda.html">Jocelyn Bell</a></li>
       <li><a href="/fr/livre.html">Astronomie, l’essentiel tout simplement</a></li>
@@ -45,17 +51,22 @@
 <main class="page-wrap">
 
   <section class="hero">
-    <div class="image">
-      <img src="/assets/img/head/a-propos.webp" alt="" aria-hidden="true">
-    </div>
 
     <div class="hero__content">
+      <img src="/assets/img/head/a-propos.webp" alt="Illustration scientifique" class="hero__portrait">
+
       <h1>À Propos</h1>
       <h3>Qui réside derrière ce site ?</h3>
+
+      <p class="hero__subtitle">
+        Ce site est un projet pédagogique dédié à la mise en lumière de l'effet Matilda et à la reconnaissance des contributions scientifiques des femmes qui ont été oubliées ou minimisées par l'histoire.
+      </p>
+
+      <a href="/fr/matilda.html" class="btn btn--primary">Découvrir Jocelyn Bell</a>
     </div>
   </section>
 
-  <section class="about-content">
+  <section class="about-content" role="region" aria-label="Présentation du projet">
     <p>Jocelyn Bell est un projet pédagogique réalisé par une étudiante du département Métiers du Multimédia et de l'Internet (MMI) de Montbéliard. Son objectif ? faire connaître l'effet Matilda et de mettre en lumière les contributions scientifiques des femmes qui ont été oubliées ou minimisées par l'histoire.</p>
 
     <p>L'effet Matilda désigne le phénomène par lequel les contributions scientifiques des femmes sont systématiquement sous-évaluées ou attribuées à leurs collègues masculins. Ce projet met un focus particulier sur Jocelyn Bell Burnell, l'astronome qui a découvert les pulsars en 1967, mais dont la découverte a été créditée à son directeur de thèse.</p>
@@ -78,41 +89,41 @@
 </main>
 
 <footer class="footer">
-  <div class="footer-content">
+  <div class="footer__content">
 
-    <div class="footer-brand">
+    <section class="footer__section">
       <img src="/assets/icons/Logo.svg" alt="Logo Jocelyn Bell">
-      <p class="footer-title">Jocelyn Bell</p>
-    </div>
+      <h3>Jocelyn Bell</h3>
+    </section>
 
-    <div class="footer-col">
-      <p class="footer-title">Liens utiles</p>
+    <section class="footer__section">
+      <h3>Liens utiles</h3>
       <ul>
         <li><a href="/fr/a-propos.html">À propos</a></li>
         <li><a href="/fr/contact.html">Contact</a></li>
         <li><a href="/fr/glossaire.html">Glossaire</a></li>
-        <li><a href="https://www.iut-nfc.univ-fcomte.fr/">Mention légale</a></li>
+        <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Mention légale</a></li>
       </ul>
-    </div>
+    </section>
 
-    <div class="footer-col">
-      <p class="footer-title">Projet pédagogique</p>
+    <section class="footer__section">
+      <h3>Projet pédagogique</h3>
       <ul>
-        <li><a href="https://www.iut-nfc.univ-fcomte.fr/">Département MMI de Montbéliard</a></li>
-        <li><a href="https://www.iut-nfc.univ-fcomte.fr/">Université Marie & Louis Pasteur</a></li>
+        <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Département MMI de Montbéliard</a></li>
+        <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Université Marie & Louis Pasteur</a></li>
       </ul>
-    </div>
+    </section>
 
-    <div class="footer-col">
-      <p class="footer-title">Réseaux sociaux</p>
-      <ul class="social">
-        <li><a href="#" aria-label="Facebook"><img src="/assets/icons/icons-29x29/Facebook.svg" alt=""></a></li>
-        <li><a href="#" aria-label="Instagram"><img src="/assets/icons/icons-29x29/Instagram.svg" alt=""></a></li>
-        <li><a href="#" aria-label="X"><img src="/assets/icons/icons-29x29/X.svg" alt=""></a></li>
+    <section class="footer__section">
+      <h3>Réseaux sociaux</h3>
+      <ul class="footer__social">
+        <li><a href="#" aria-label="Facebook" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/Facebook.svg" alt=""></a></li>
+        <li><a href="#" aria-label="Instagram" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/Instagram.svg" alt=""></a></li>
+        <li><a href="#" aria-label="X" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/X.svg" alt=""></a></li>
       </ul>
-    </div>
+    </section>
 
-    <p class="footer-bottom">
+    <p class="footer__bottom">
       © 2025 Jocelyn Bell – Projet réalisé par Estelle Coulon dans le cadre d’un projet individuel de S1 au département MMI de Montbéliard
     </p>
 

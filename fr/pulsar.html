@@ -10,23 +10,28 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
   <link rel="manifest" href="/assets/favicon/site.webmanifest">
 
-  <meta name="description" content="Comprendre ce qu’est un pulsar, ses caractéristiques et sa formation.">
-</head>
+  <meta name="description" content="Comprendre ce qu’est un pulsar, ses caractéristiques et sa formation.">  <link rel="stylesheet" href="/src/css/style.css"></head>
 
 <body>
 
 <header class="header">
-  <a href="/index.html" class="logo" aria-label="Accueil">
+  <a href="/index.html" class="header__logo" aria-label="Accueil Jocelyn Bell">
     <img src="/assets/icons/Logo.svg" alt="Logo Jocelyn Bell">
   </a>
 
-  <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">
+  <a href="/index-en.html" class="header__logo"  aria-label="Accueil Jocelyn Bell">
+        <img src="/assets/icons/icons-24x24/Globe.svg" alt="Logo Jocelyn Bell">
+  </a>
+
+  <h3 class="header__title">Jocelyn Bell</h3>
+
+  <button class="header__menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
     <span></span>
     <span></span>
     <span></span>
   </button>
 
-  <nav id="menu" class="nav" aria-label="Navigation principale">
+  <nav class="nav" id="main-nav" aria-label="Navigation principale">
     <ul>
       <li><a href="/fr/matilda.html">Jocelyn Bell</a></li>
       <li><a href="/fr/livre.html">Astronomie, l’essentiel tout simplement</a></li>
@@ -41,25 +46,40 @@
   </nav>
 </header>
 
-<main>
+<main class="page-wrap">
 
   <section class="hero">
-    <div class="image">
-      <img src="/assets/img/head/pulsar.webp" alt="" aria-hidden="true">
+
+    <div class="hero__content">
+      <img src="/assets/img/head/pulsar.webp" alt="Illustration d'un pulsar" class="hero__portrait">
+
+      <h1>Pulsar</h1>
+      <h3>Phares Cosmiques et Horloges de l'Univers</h3>
+
+      <p class="hero__subtitle">
+        Imaginez un phare cosmique tournant à une vitesse vertigineuse dans l'immensité de l'espace. Les pulsars sont des étoiles à neutrons ultra-denses qui émettent des faisceaux de rayonnement électromagnétique. Lorsque ces faisceaux balayent la Terre, nous détectons des impulsions radio régulières, aussi précises qu'une horloge atomique.
+      </p>
+
+      <a href="/fr/matilda.html" class="btn btn--primary">En savoir plus sur Jocelyn Bell</a>
     </div>
-    <h1>Pulsar</h1>
-    <h3>Phares Cosmiques et Horloges de l'Univers</h3>
   </section>
 
   <section class="media">
-    <video controls class="video-content">
-      <source src="/assets/video/129936-745943770_small.mp4" type="video/mp4">
-      Votre navigateur ne supporte pas la lecture de vidéos.
-    </video>
-    <p class="caption">Vidéo d'un pulsar : émission de faisceaux</p>
-  </section>
+  <video
+    class="media__video"
+    autoplay
+    muted
+    loop
+    playsinline
+  >
+    <source src="/assets/video/129936-745943770_small.mp4" type="video/mp4">
+    Votre navigateur ne supporte pas la lecture de vidéos.
+  </video>
 
-  <section class="content">
+  <p class="media__caption">Vidéo d'un pulsar : émission de faisceaux</p>
+</section>
+
+  <section class="content" role="region" aria-label="Informations sur les pulsars">
 
     <article class="block">
       <h2>Qu'est-ce qu'un pulsar ?</h2>
@@ -71,8 +91,8 @@
       </p>
     </article>
 
-    <section class="cards__infos">
-      <div class="cards__infos-content">
+    <section class="cards__infos" role="list" aria-label="Caractéristiques des pulsars">
+      <div class="cards__infos__item" role="listitem">
         <img src="/assets/icons/icons-24x24/Flash.svg" alt="" aria-hidden="true">
         <h3>Ultra-dense</h3>
         <p>
@@ -81,7 +101,7 @@
         </p>
       </div>
 
-      <div class="cards__infos-content">
+      <div class="cards__infos__item" role="listitem">
         <img src="/assets/icons/icons-24x24/Time.svg" alt="" aria-hidden="true">
         <h3>Rotation extrême</h3>
         <p>
@@ -90,7 +110,7 @@
         </p>
       </div>
 
-      <div class="cards__infos-content">
+      <div class="cards__infos__item" role="listitem">
         <img src="/assets/icons/icons-24x24/Star%20Fill.svg" alt="" aria-hidden="true">
         <h3>Précision horlogère</h3>
         <p>
@@ -127,48 +147,46 @@
 </main>
 
 <footer class="footer">
-  <div class="footer-content">
+  <div class="footer__content">
 
-    <div class="footer-brand">
+    <section class="footer__section">
       <img src="/assets/icons/Logo.svg" alt="Logo Jocelyn Bell">
-      <p class="footer-title">Jocelyn Bell</p>
-    </div>
+      <h3>Jocelyn Bell</h3>
+    </section>
 
-    <div class="footer-col">
-      <p class="footer-title">Liens utiles</p>
+    <section class="footer__section">
+      <h3>Liens utiles</h3>
       <ul>
         <li><a href="/fr/a-propos.html">À propos</a></li>
         <li><a href="/fr/contact.html">Contact</a></li>
         <li><a href="/fr/glossaire.html">Glossaire</a></li>
-        <li><a href="https://www.iut-nfc.univ-fcomte.fr/">Mention légale</a></li>
+        <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Mention légale</a></li>
       </ul>
-    </div>
+    </section>
 
-    <div class="footer-col">
-      <p class="footer-title">Projet pédagogique</p>
+    <section class="footer__section">
+      <h3>Projet pédagogique</h3>
       <ul>
-        <li><a href="https://www.iut-nfc.univ-fcomte.fr/">Département MMI de Montbéliard</a></li>
-        <li><a href="https://www.iut-nfc.univ-fcomte.fr/">Université Marie & Louis Pasteur</a></li>
+        <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Département MMI de Montbéliard</a></li>
+        <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Université Marie & Louis Pasteur</a></li>
       </ul>
-    </div>
+    </section>
 
-    <div class="footer-col">
-      <p class="footer-title">Réseaux sociaux</p>
-      <ul class="social">
-        <li><a href="#" aria-label="Facebook"><img src="/assets/icons/icons-29x29/Facebook.svg" alt=""></a></li>
-        <li><a href="#" aria-label="Instagram"><img src="/assets/icons/icons-29x29/Instagram.svg" alt=""></a></li>
-        <li><a href="#" aria-label="X"><img src="/assets/icons/icons-29x29/X.svg" alt=""></a></li>
+    <section class="footer__section">
+      <h3>Réseaux sociaux</h3>
+      <ul class="footer__social">
+        <li><a href="#" aria-label="Facebook" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/Facebook.svg" alt=""></a></li>
+        <li><a href="#" aria-label="Instagram" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/Instagram.svg" alt=""></a></li>
+        <li><a href="#" aria-label="X" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/X.svg" alt=""></a></li>
       </ul>
-    </div>
+    </section>
 
-    <p class="footer-bottom">
+    <p class="footer__bottom">
       © 2025 Jocelyn Bell – Projet réalisé par Estelle Coulon dans le cadre d’un projet individuel de S1 au département MMI de Montbéliard
     </p>
 
   </div>
 </footer>
-
 <script src="/src/js/script.js"></script>
-
 </body>
 </html>

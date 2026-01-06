@@ -1,0 +1,32 @@
+/* Variable collection */
+:root {
+  /* Mode 1 */
+  /* color */
+  --black-blue: #0d082d;
+  --cream: #eae3da;
+  --dark-blue: #1b2449;
+  --ocean-blue: #1032ea;
+  --pink-candy: #ec6ffd;
+  --purple: #8c3cef;
+/* Text Style Variables */
+  /* Mode 1 */
+  /* number */
+  --font-size-11: 0.6875rem;
+  --font-size-13: 0.8125rem;
+  --font-size-20: 1.25rem;
+  --font-size-24: 1.5rem;
+  --font-size-32: 2rem;
+  --font-weight-regular: 25rem;
+  --font-weight-bold: 43.75rem;
+  --letter-spacing-0: 0rem;
+  --line-height-110: 6.875rem;
+  --line-height-150: 9.375rem;
+  --line-height-160: 10rem;
+  --list-spacing-0: 0rem;
+  --paragraph-indent-0: 0rem;
+  --paragraph-spacing-0: 0rem;
+  /* string */
+  --font-family-audiowide: Audiowide;
+  --font-family-souliyo-unicode: Souliyo Unicode;
+  --font-family-space-mono: Space Mono;
+}

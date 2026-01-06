@@ -12,22 +12,29 @@
   <link rel="manifest" href="/assets/favicon/site.webmanifest">
 
   <meta name="description" content="Jocelyn Bell Burnell et la découverte des pulsars en 1967.">
+  <link rel="stylesheet" href="/src/css/style.css">
 </head>
 
 <body>
 
 <header class="header">
-  <a href="/index.html" class="logo" aria-label="Accueil">
+  <a href="/index.html" class="header__logo" aria-label="Accueil Jocelyn Bell">
     <img src="/assets/icons/Logo.svg" alt="Logo Jocelyn Bell">
   </a>
 
-  <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">
+  <a href="/index-en.html" class="header__logo"  aria-label="Accueil Jocelyn Bell">
+        <img src="/assets/icons/icons-24x24/Globe.svg" alt="Logo Jocelyn Bell">
+  </a>
+
+  <h3 class="header__title">Jocelyn Bell</h3>
+
+  <button class="header__menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
     <span></span>
     <span></span>
     <span></span>
   </button>
 
-  <nav id="menu" class="nav" aria-label="Navigation principale">
+  <nav class="nav" id="main-nav" aria-label="Navigation principale">
     <ul>
       <li><a href="/fr/matilda.html" aria-current="page">Jocelyn Bell</a></li>
       <li><a href="/fr/livre.html">Astronomie, l’essentiel tout simplement</a></li>
@@ -42,24 +49,26 @@
   </nav>
 </header>
 
-<main>
+<main class="page-wrap">
 
   <section class="hero">
 
-    <img src="/assets/img/head/jocelyn-bell.webp" alt="Portrait de Jocelyn Bell Burnell" class="hero-photo">
+    <div class="hero__content">
+      <img src="/assets/img/head/jocelyn-bell.webp" alt="Portrait de Jocelyn Bell Burnell" class="hero__portrait">
 
-    <h1>Jocelyn Bell Burnell</h1>
-    <h3>La découverte des pulsars</h3>
+      <h1>Jocelyn Bell Burnell</h1>
+      <h3>La découverte des pulsars</h3>
 
-    <p>
-      Susan Jocelyn Bell Burnell, née le 15 juillet 1943 à Belfast, est une astrophysicienne britannique dont la découverte a révolutionné notre compréhension de l'univers. En 1967, alors qu'elle était étudiante en thèse à l'Université de Cambridge, elle a détecté le premier pulsar, une découverte qui allait valoir le prix Nobel de physique en 1974… mais pas à elle.
-    </p>
+      <p class="hero__subtitle">
+        Susan Jocelyn Bell Burnell, née le 15 juillet 1943 à Belfast, est une astrophysicienne britannique dont la découverte a révolutionné notre compréhension de l'univers. En 1967, alors qu'elle était étudiante en thèse à l'Université de Cambridge, elle a détecté le premier pulsar, une découverte qui allait valoir le prix Nobel de physique en 1974… mais pas à elle.
+      </p>
+    </div>
   </section>
 
   <section class="content">
 
     <article class="block">
-      <img src="/assets/img/article/pulsar/pulsar-1.webp" alt="Illustration d’un pulsar" class="block-img">
+      <img src="/assets/img/article/pulsar/pulsar-1.webp" alt="Illustration d'un pulsar" class="block-img" loading="lazy">
       <h2>Une découverte révolutionnaire</h2>
       <p>
         En novembre 1967, Jocelyn Bell remarque un signal inhabituel sur les données du radiotélescope qu'elle avait elle-même contribué à construire. Ce signal pulsé, extrêmement régulier, provenait d'un point fixe dans le ciel. D'abord surnommé « LGM-1 », il s'est avéré être le tout premier pulsar jamais détecté.
@@ -67,11 +76,11 @@
       <p>
         Les pulsars sont des étoiles à neutrons en rotation ultra-rapide qui émettent des faisceaux de rayonnement électromagnétique. Sa découverte a ouvert un nouveau champ d'étude en astrophysique.
       </p>
-      <a href="/fr/pulsar.html" class="btn">Qu’est-ce qu’un pulsar ?</a>
+      <a href="/fr/pulsar.html" class="btn btn--primary">Qu'est-ce qu'un pulsar ?</a>
     </article>
 
     <article class="block">
-      <img src="/assets/img/article/pulsar/pulsar-2.webp" alt="Illustration de la justice" class="block-img">
+      <img src="/assets/img/article/pulsar/pulsar-2.webp" alt="Illustration de la justice" class="block-img" loading="lazy">
       <h2>L’effet Matilda en action</h2>
       <p>
         En 1974, le prix Nobel de physique est attribué à Antony Hewish et à Martin Ryle. Jocelyn Bell, pourtant à l'origine de la découverte des pulsars, est exclue de cette reconnaissance.
@@ -83,7 +92,7 @@
     </article>
 
     <article class="block">
-      <img src="/assets/img/article/pulsar/pulsar-3.webp" alt="Antenne radioastronomique" class="block-img">
+      <img src="/assets/img/article/pulsar/pulsar-3.webp" alt="Antenne radioastronomique" class="block-img" loading="lazy">
       <h2>Un héritage inspirant</h2>
       <p>
         Malgré cette injustice, Jocelyn Bell Burnell a poursuivi une carrière brillante. En 2018, elle reçoit le Special Breakthrough Prize in Fundamental Physics (3 millions de dollars) et reverse la totalité pour créer des bourses.
@@ -110,41 +119,41 @@
 </main>
 
 <footer class="footer">
-  <div class="footer-content">
+  <div class="footer__content">
 
-    <div class="footer-brand">
+    <section class="footer__section">
       <img src="/assets/icons/Logo.svg" alt="Logo Jocelyn Bell">
-      <p class="footer-title">Jocelyn Bell</p>
-    </div>
+      <h3>Jocelyn Bell</h3>
+    </section>
 
-    <div class="footer-col">
-      <p class="footer-title">Liens utiles</p>
+    <section class="footer__section">
+      <h3>Liens utiles</h3>
       <ul>
         <li><a href="/fr/a-propos.html">À propos</a></li>
         <li><a href="/fr/contact.html">Contact</a></li>
         <li><a href="/fr/glossaire.html">Glossaire</a></li>
-        <li><a href="https://www.iut-nfc.univ-fcomte.fr/">Mention légale</a></li>
+        <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Mention légale</a></li>
       </ul>
-    </div>
+    </section>
 
-    <div class="footer-col">
-      <p class="footer-title">Projet pédagogique</p>
+    <section class="footer__section">
+      <h3>Projet pédagogique</h3>
       <ul>
-        <li><a href="https://www.iut-nfc.univ-fcomte.fr/">Département MMI de Montbéliard</a></li>
-        <li><a href="https://www.iut-nfc.univ-fcomte.fr/">Université Marie & Louis Pasteur</a></li>
+        <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Département MMI de Montbéliard</a></li>
+        <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Université Marie & Louis Pasteur</a></li>
       </ul>
-    </div>
+    </section>
 
-    <div class="footer-col">
-      <p class="footer-title">Réseaux sociaux</p>
-      <ul class="social">
-        <li><a href="#" aria-label="Facebook"><img src="/assets/icons/icons-29x29/Facebook.svg" alt=""></a></li>
-        <li><a href="#" aria-label="Instagram"><img src="/assets/icons/icons-29x29/Instagram.svg" alt=""></a></li>
-        <li><a href="#" aria-label="X"><img src="/assets/icons/icons-29x29/X.svg" alt=""></a></li>
+    <section class="footer__section">
+      <h3>Réseaux sociaux</h3>
+      <ul class="footer__social">
+        <li><a href="#" aria-label="Facebook" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/Facebook.svg" alt=""></a></li>
+        <li><a href="#" aria-label="Instagram" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/Instagram.svg" alt=""></a></li>
+        <li><a href="#" aria-label="X" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/X.svg" alt=""></a></li>
       </ul>
-    </div>
+    </section>
 
-    <p class="footer-bottom">
+    <p class="footer__bottom">
       © 2025 Jocelyn Bell – Projet réalisé par Estelle Coulon dans le cadre d’un projet individuel de S1 au département MMI de Montbéliard
     </p>
 
@@ -153,3 +162,4 @@
 
 </body>
 </html>
+

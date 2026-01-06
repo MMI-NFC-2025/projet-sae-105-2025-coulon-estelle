@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
 <script src="/src/js/script.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jocelyn Bell</title>
@@ -12,16 +13,23 @@
   <link rel="manifest" href="/assets/favicon/site.webmanifest">
 
   <meta name="description" content="Jocelyn Bell est une astrophysicienne nord-irlandaise célèbre pour sa découverte des pulsars en 1967.">
+  <link rel="stylesheet" href="/src/css/style.css">
 </head>
 
 <body class="home">
 
 <header class="header">
-  <a href="/index.html" class="logo" aria-label="Accueil Jocelyn Bell">
+  <a href="/index.html" class="header__logo" aria-label="Accueil Jocelyn Bell">
     <img src="/assets/icons/Logo.svg" alt="Logo Jocelyn Bell">
   </a>
 
-  <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+  <a href="/index-en.html" class="header__logo"  aria-label="Accueil Jocelyn Bell">
+        <img src="/assets/icons/icons-24x24/Globe.svg" alt="Logo Jocelyn Bell">
+  </a>
+
+  <h3 class="header__title">Jocelyn Bell</h3>
+
+  <button class="header__menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
     <span></span>
     <span></span>
     <span></span>
@@ -42,7 +50,7 @@
   </nav>
 </header>
 
-<main class="main-content">
+<main class="page-wrap" role="main">
 
 <section class="hero">
 
@@ -57,11 +65,11 @@
       Victime de l’effet Matilda, elle ne reçoit pas le prix Nobel attribué à ses superviseurs masculins.
     </p>
 
-    <a href="/fr/matilda.html" class="original__button">Découvrir son histoire</a>
+    <a href="/fr/matilda.html" class="btn btn--primary">Découvrir son histoire</a>
   </div>
 </section>
 
-<section class="cards__landing-page">
+<section class="cards__landing-page" role="region" aria-label="Articles principaux">
 
   <article class="cards__landing-page-content">
     <div>
@@ -76,7 +84,7 @@
       dont Jocelyn Bell.
     </p>
 
-    <a href="/fr/livre.html" class="original__button">Parcourir le livre</a>
+    <a href="/fr/livre.html" class="btn btn--primary">Parcourir le livre</a>
   </article>
 
   <article class="cards__landing-page-content">
@@ -92,17 +100,17 @@
       comme des phares cosmiques dans l’espace.
     </p>
 
-    <a href="/fr/pulsar.html" class="original__button">En savoir plus</a>
+    <a href="/fr/pulsar.html" class="btn btn--primary">En savoir plus</a>
   </article>
 
 </section>
 
-<section class="cards__principal">
-  <h2 class="cards__principal__title">Film Inspirant</h2>
+<section class="cards__films" role="region" aria-label="Films inspirants">
+  <h2 class="cards__films__title">Film Inspirant</h2>
 
-  <article class="cards__principal-content">
-      <a href="/fr/film.html" target="_blank" rel="noopener noreferrer">
-      <img src="/assets/img/cards/films/Interstellar.webp" alt="Affiche du film Interstellar">
+  <article class="cards__films__item">
+      <a href="/fr/film.html">
+      <img src="/assets/img/cards/films/Interstellar.webp" alt="Affiche du film Interstellar" loading="lazy">
       <div>
         <h2>Interstellar</h2>
         <p>2014</p>
@@ -113,9 +121,9 @@
       </div>
     </article>
 
-    <article class="cards__principal-content">
-      <a href="/fr/contact-film.html" target="_blank" rel="noopener noreferrer"></a>
-      <img src="/assets/img/cards/films/Contact.webp" alt="Affiche du film Contact">
+    <article class="cards__films__item">
+      <a href="/fr/contact-film.html">
+      <img src="/assets/img/cards/films/Contact.webp" alt="Affiche du film Contact" loading="lazy">
       <div>
         <h2>Contact</h2>
         <p>1997</p>
@@ -124,12 +132,13 @@
           qui capte un signal venu des profondeurs du cosmos.
         </p>
       </div>
+      </a>
     </article>
 
-  <article class="cards__principal-content">
-    <img src="/assets/img/cards/films/The-Theory-of-Everything.webp" alt="Affiche du film The Theory of Everything">
+  <article class="cards__films__item">
+    <img src="/assets/img/cards/films/The-Theory-of-Everything.webp" alt="Affiche du film The Theory of Everything" loading="lazy">
     <div>
-      <h3>The Theory of Everything</h3>
+      <h2>The Theory of Everything</h2>
       <p>2014</p>
       <p>
         Ce film retrace la vie de Stephen Hawking, où la fragilité du corps contraste avec l’infini de la pensée. Entre amour et science, il célèbre la force de l’esprit humain...
@@ -137,10 +146,10 @@
     </div>
   </article>
 
-  <article class="cards__principal-content">
-    <img src="/assets/img/cards/films/Cosmos.webp" alt="Affiche du film Cosmos">
+  <article class="cards__films__item">
+    <img src="/assets/img/cards/films/Cosmos.webp" alt="Affiche du film Cosmos" loading="lazy">
     <div>
-      <h3>Cosmos : A Spacetime Odyssey</h3>
+      <h2>Cosmos : A Spacetime Odyssey</h2>
       <p>2014</p>
       <p>
         Cette série transforme la science en récit d’aventure. Portée par des images spectaculaires, elle nous entraîne à travers le temps, les étoiles et les découvertes qui ont façonné notre compréhension...
@@ -166,24 +175,24 @@
         <li><a href="/fr/a-propos.html">À propos</a></li>
         <li><a href="/fr/contact.html">Contact</a></li>
         <li><a href="/fr/glossaire.html">Glossaire</a></li>
-        <li><a href="https://www.iut-nfc.univ-fcomte.fr/">Mention légale</a></li>
+        <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Mention légale</a></li>
       </ul>
     </section>
 
     <section class="footer__section">
       <h3>Projet pédagogique</h3>
       <ul>
-        <li><a href="https://www.iut-nfc.univ-fcomte.fr/">Département MMI de Montbéliard</a></li>
-        <li><a href="https://www.iut-nfc.univ-fcomte.fr/">Université Marie & Louis Pasteur</a></li>
+        <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Département MMI de Montbéliard</a></li>
+        <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Université Marie & Louis Pasteur</a></li>
       </ul>
     </section>
 
     <section class="footer__section">
       <h3>Réseaux sociaux</h3>
       <ul class="footer__social">
-        <li><a href="#" aria-label="Facebook"><img src="/assets/icons/icons-29x29/Facebook.svg" alt=""></a></li>
-        <li><a href="#" aria-label="Instagram"><img src="/assets/icons/icons-29x29/Instagram.svg" alt=""></a></li>
-        <li><a href="#" aria-label="X"><img src="/assets/icons/icons-29x29/X.svg" alt=""></a></li>
+        <li><a href="#" aria-label="Facebook" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/Facebook.svg" alt=""></a></li>
+        <li><a href="#" aria-label="Instagram" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/Instagram.svg" alt=""></a></li>
+        <li><a href="#" aria-label="X" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/X.svg" alt=""></a></li>
       </ul>
     </section>
 
@@ -196,3 +205,4 @@
 
 </body>
 </html>
+

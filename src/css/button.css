@@ -1,0 +1,102 @@
+/* Bouton global */
+.btn.btn--primary{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  padding: 14px 18px;
+  min-width: min(520px, 100%);
+  border-radius: 16px;
+  border: 1px solid rgba(236, 111, 253, 0.25);
+  background: linear-gradient(90deg, var(--pink-candy) 0%, var(--purple) 55%, var(--ocean-blue) 100%);
+  color: var(--black-blue);
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35), 0 0 22px rgba(236, 111, 253, 0.22);
+  transition: transform .15s ease, filter .15s ease, box-shadow .15s ease;
+}
+.btn.btn--primary:hover{
+  transform: translateY(-1px);
+  filter: brightness(1.03);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.45), 0 0 26px rgba(236, 111, 253, 0.30);
+}
+.btn.btn--primary:active{ transform: translateY(0); }
+
+/* =========================================================
+   BOUTONS (section .links) — comme l’image
+   HTML inchangé
+   ========================================================= */
+
+.links{
+  display: grid;
+  gap: 18px;
+  width: min(520px, 100%);
+  margin: 26px auto 0;
+}
+
+/* base bouton */
+.links .btn{
+  height: 56px;
+  padding: 0 18px 0 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+
+  text-decoration: none;
+
+  border-radius: 14px;
+  border: 1px solid rgba(140, 60, 239, 0.35);
+  background: rgba(27, 36, 73, 0.45);
+
+  box-shadow:
+    0 12px 34px rgba(0,0,0,0.35),
+    0 0 20px rgba(140,60,239,0.12);
+
+  font-family: var(--font-family-space-mono);
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  color: rgba(234,227,218,0.90);
+
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease, background .15s ease;
+}
+
+/* icône à droite (carré outline) */
+.links .btn img{
+  width: 26px;
+  height: 26px;
+  flex: 0 0 auto;
+  opacity: 0.95;
+
+  filter: drop-shadow(0 0 10px rgba(236,111,253,0.15));
+}
+
+/* hover */
+.links .btn:hover{
+  transform: translateY(-1px);
+  border-color: rgba(236,111,253,0.45);
+  background: rgba(27, 36, 73, 0.55);
+  box-shadow:
+    0 16px 44px rgba(0,0,0,0.45),
+    0 0 26px rgba(236,111,253,0.18);
+}
+.links .btn:active{
+  transform: translateY(0);
+}
+
+/* =========================================================
+   Variante 2 (btn2) — texte violet/rose comme l’image
+   ========================================================= */
+
+.links .btn2{
+  color: rgba(236,111,253,0.92);
+  border-color: rgba(236,111,253,0.30);
+}
+
+.links .btn2:hover{
+  border-color: rgba(236,111,253,0.55);
+  box-shadow:
+    0 16px 44px rgba(0,0,0,0.45),
+    0 0 28px rgba(236,111,253,0.22);
+}

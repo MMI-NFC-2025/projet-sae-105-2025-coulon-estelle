@@ -17,11 +17,17 @@
 <body class="home">
 
 <header class="header">
-  <a href="/index.html" class="logo" aria-label="Accueil Jocelyn Bell">
+  <a href="/index.html" class="header__logo" aria-label="Accueil Jocelyn Bell">
     <img src="/assets/icons/Logo.svg" alt="Logo Jocelyn Bell">
   </a>
 
-  <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+  <a href="/index-en.html" class="header__logo"  aria-label="Accueil Jocelyn Bell">
+        <img src="/assets/icons/icons-24x24/Globe.svg" alt="Logo Jocelyn Bell">
+  </a>
+
+  <h3 class="header__title">Jocelyn Bell</h3>
+
+  <button class="header__menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
     <span></span>
     <span></span>
     <span></span>
@@ -42,35 +48,21 @@
   </nav>
 </header>
 
-<main class="main-content">
+<main class="page-wrap">
 
   <section class="hero">
+
     <div class="hero__content">
       <img src="/assets/img/head/contact.webp" alt="Affiche du film Contact" class="hero__portrait">
 
       <h1>Contact</h1>
       <h3>Science, foi et mystère cosmique</h3>
 
-      <form class="contact-form" action="#" method="post">
-        <div class="form-group">
-          <label for="name">Nom complet</label>
-          <input type="text" id="name" name="name" required>
-        </div>
+      <p class="hero__subtitle">
+        Une enquête scientifique sur l'existence de vie extraterrestre. Ce film explore les thèmes de la persévérance, du doute et de la quête de réponses sur notre place dans l'univers.
+      </p>
 
-        <div class="form-group">
-          <label for="email">Adresse email</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-
-        <div class="form-group">
-          <label for="message">Votre message</label>
-          <textarea id="message" name="message" rows="6" required></textarea>
-        </div>
-
-        <button type="submit" class="btn btn--primary">
-          Envoyer le message
-        </button>
-      </form>
+      <a href="/fr/contact-film.html" class="btn btn--primary">En savoir plus sur le film</a>
     </div>
   </section>
 
@@ -89,41 +81,41 @@
 </main>
 
 <footer class="footer">
-  <div class="footer-content">
+  <div class="footer__content">
 
-    <div class="footer-brand">
+    <section class="footer__section">
       <img src="/assets/icons/Logo.svg" alt="Logo Jocelyn Bell">
-      <p class="footer-title">Jocelyn Bell</p>
-    </div>
+      <h3>Jocelyn Bell</h3>
+    </section>
 
-    <div class="footer-col">
-      <p class="footer-title">Liens utiles</p>
+    <section class="footer__section">
+      <h3>Liens utiles</h3>
       <ul>
         <li><a href="/fr/a-propos.html">À propos</a></li>
         <li><a href="/fr/contact.html">Contact</a></li>
         <li><a href="/fr/glossaire.html">Glossaire</a></li>
-        <li><a href="https://www.iut-nfc.univ-fcomte.fr/">Mention légale</a></li>
+        <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Mention légale</a></li>
       </ul>
-    </div>
+    </section>
 
-    <div class="footer-col">
-      <p class="footer-title">Projet pédagogique</p>
+    <section class="footer__section">
+      <h3>Projet pédagogique</h3>
       <ul>
-        <li><a href="https://www.iut-nfc.univ-fcomte.fr/">Département MMI de Montbéliard</a></li>
-        <li><a href="https://www.iut-nfc.univ-fcomte.fr/">Université Marie & Louis Pasteur</a></li>
+        <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Département MMI de Montbéliard</a></li>
+        <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Université Marie & Louis Pasteur</a></li>
       </ul>
-    </div>
+    </section>
 
-    <div class="footer-col">
-      <p class="footer-title">Réseaux sociaux</p>
-      <ul class="social">
-        <li><a href="#" aria-label="Facebook"><img src="/assets/icons/icons-29x29/Facebook.svg" alt=""></a></li>
-        <li><a href="#" aria-label="Instagram"><img src="/assets/icons/icons-29x29/Instagram.svg" alt=""></a></li>
-        <li><a href="#" aria-label="X"><img src="/assets/icons/icons-29x29/X.svg" alt=""></a></li>
+    <section class="footer__section">
+      <h3>Réseaux sociaux</h3>
+      <ul class="footer__social">
+        <li><a href="#" aria-label="Facebook" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/Facebook.svg" alt=""></a></li>
+        <li><a href="#" aria-label="Instagram" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/Instagram.svg" alt=""></a></li>
+        <li><a href="#" aria-label="X" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/X.svg" alt=""></a></li>
       </ul>
-    </div>
+    </section>
 
-    <p class="footer-bottom">
+    <p class="footer__bottom">
       © 2025 Jocelyn Bell – Projet réalisé par Estelle Coulon dans le cadre d’un projet individuel de S1 au département MMI de Montbéliard
     </p>
 
@@ -134,3 +126,4 @@
 
 </body>
 </html>
+

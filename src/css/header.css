@@ -1,0 +1,96 @@
+/* =========================
+   HEADER : titre entre logo et globe
+   ========================= */
+.header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+
+  height: 76px;
+  padding: 18px 18px 0;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  background: var(--black-blue);
+}
+
+/* Logos */
+.header .header__logo{
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
+.header .header__logo:first-of-type img{
+  width: 34px;
+  height: 34px;
+}
+
+/* Titre AU MILIEU (entre logo gauche et globe) */
+.header__title{
+  margin: 0;
+  flex: 1;                 /* prend l’espace entre les blocs */
+  text-align: center;       /* centré dans cet espace */
+  white-space: nowrap;      /* évite les retours à la ligne */
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  font-family: var(--font-family-audiowide);
+  font-size: 26px;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  color: var(--pink-candy);
+  text-shadow: 0 0 14px rgba(236, 111, 253, 0.18);
+  pointer-events: none;
+}
+
+/* Globe + burger à droite, collés */
+.header .header__logo:nth-of-type(2){
+  margin-left: 0;         /* plus besoin de auto */
+}
+.header .header__logo:nth-of-type(2) img{
+  width: 26px;
+  height: 26px;
+}
+
+.header__menu-toggle{
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+  flex: 0 0 auto;
+}
+
+/* burger lines */
+.header__menu-toggle span{
+  position: absolute;
+  left: 50%;
+  width: 22px;
+  height: 2px;
+  background: rgba(234, 227, 218, 0.92);
+  border-radius: 999px;
+  transform-origin: center;
+  transition: transform .2s ease, opacity .2s ease;
+}
+.header__menu-toggle span:nth-child(1){ top: 14px; transform: translateX(-50%); }
+.header__menu-toggle span:nth-child(2){ top: 50%; transform: translate(-50%, -50%); }
+.header__menu-toggle span:nth-child(3){ bottom: 14px; transform: translateX(-50%); }
+
+.header__menu-toggle[aria-expanded="true"] span:nth-child(1){
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.header__menu-toggle[aria-expanded="true"] span:nth-child(2){ opacity: 0; }
+.header__menu-toggle[aria-expanded="true"] span:nth-child(3){
+  bottom: auto;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
