@@ -6,5 +6,5 @@
 - NOM : COULON
 - PRÉNOM : Estelle
 - GROUPE : B2
-- URL du site : 
-- URL FIGMA :
+- URL du site : https://jocelynbell.netlify.app/fr/
+- URL FIGMA : https://www.figma.com/design/x9YCT4sCh7QmeU1pCeCFTY/Maquettes-projet-individuel-%E2%80%94-Estelle-Coulon?node-id=3702-358&t=BPyJoDcLPDnOnDbA-1
