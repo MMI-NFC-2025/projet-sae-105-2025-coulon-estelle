@@ -1,4 +1,6 @@
-/* Bouton global */
+/* ==================================================
+   BOUTON GLOBAL
+ ========================================= */
 .btn.btn--primary{
   display: inline-flex;
   align-items: center;
@@ -23,8 +25,7 @@
 .btn.btn--primary:active{ transform: translateY(0); }
 
 /* =========================================================
-   BOUTONS (section .links) — comme l’image
-   HTML inchangé
+   BOUTONS (section .links)
    ========================================================= */
 
 .links{
@@ -62,7 +63,7 @@
   transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease, background .15s ease;
 }
 
-/* icône à droite (carré outline) */
+/* icône */
 .links .btn img{
   width: 26px;
   height: 26px;
@@ -85,9 +86,7 @@
   transform: translateY(0);
 }
 
-/* =========================================================
-   Variante 2 (btn2) — texte violet/rose comme l’image
-   ========================================================= */
+/* Variante BOUTON 2 (.links) */
 
 .links .btn2{
   color: color-mix(in srgb, var(--pink-candy) 92%, transparent);

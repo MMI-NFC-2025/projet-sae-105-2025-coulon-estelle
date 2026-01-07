@@ -1,5 +1,5 @@
 /* =========================================================
-   SECTION ARTICLE — SANS card / SANS background
+   SECTION ARTICLE
    ========================================================= */
 
 .content{
@@ -9,7 +9,7 @@
   gap: 28px;
 }
 
-/* article = simple conteneur, aucun style "carte" */
+/*conteneur*/
 .block{
   border: none;
   background: none;
@@ -18,12 +18,12 @@
   padding: 0;
 }
 
-/* image libre, NON rognée : affiche l’image en entier */
+/* image */
 .block-img{
   display: block;
   width: 100%;
   height: auto;
-  object-fit: contain;   /* l’image reste entière */
+  object-fit: contain;
   object-position: center;
 
   border-radius: 0;
@@ -34,7 +34,7 @@
   margin: 0 0 18px;
 }
 
-/* titre violet, comme sur l’image */
+/* titre */
 .block h2{
   margin: 0 0 14px;
   font-family: var(--font-family-audiowide);
@@ -46,7 +46,7 @@
   text-shadow: 0 0 16px color-mix(in srgb, var(--purple) 35%, transparent);
 }
 
-/* texte mono, fluide, sans effet carte */
+/* texte */
 .block p{
   margin: 0 0 14px;
   font-family: var(--font-family-space-mono);
@@ -57,7 +57,7 @@
   text-shadow: none;
 }
 
-/* liens dans le texte */
+/* liens */
 .block p a{
   color: color-mix(in srgb, var(--pink-candy) 95%, transparent);
   text-decoration: none;
@@ -67,7 +67,7 @@
   border-bottom-color: color-mix(in srgb, var(--pink-candy) 70%, transparent);
 }
 
-/* bouton conservé, mais sans "effet carte autour" */
+/* bouton */
 .block .btn.btn--primary{
   width: 100%;
   margin-top: 12px;

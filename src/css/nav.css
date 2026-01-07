@@ -1,9 +1,9 @@
 /* =========================
-   NAV : texte menu PAS visible par défaut
+   NAV
    ========================= */
 .nav{
   position: fixed;
-  top: 76px;              /* sous le header */
+  top: 76px;            
   right: 18px;
   width: min(360px, calc(100% - 36px));
 
@@ -14,11 +14,9 @@
   backdrop-filter: blur(16px);
   box-shadow: 0 18px 60px color-mix(in srgb, black 55%, transparent);
 
-  /* caché */
   display: none;
 }
 
-/* visible uniquement quand ouvert */
 .nav.is-open{
   display: block;
 }

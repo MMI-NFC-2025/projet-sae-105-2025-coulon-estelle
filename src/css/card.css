@@ -103,7 +103,7 @@
 
 }
 
-/* Liens cliquables */
+/* Liens */
 .cards__films__item > a{
   display: block;
   color: inherit;
@@ -140,8 +140,7 @@
 }
 
 /* =========================================================
-   CARD LIVRE — rendu identique à l’image
-   (HTML inchangé)
+   CARD LIVRE
    ========================================================= */
 
 .card{
@@ -166,17 +165,16 @@
     0 0 26px color-mix(in srgb, var(--purple) 25%, transparent);
 }
 
-/* image du livre */
+/* image */
 .card > img{
   width: 100%;
   height: auto;
   display: block;
 
-  /* effet “plongée” comme sur l’image */
   filter: saturate(1.05) contrast(1.05);
 }
 
-/* bloc infos en bas */
+/* infos */
 .card > div{
   padding: 16px 18px 18px;
   background: linear-gradient(
@@ -194,7 +192,7 @@
   color: color-mix(in srgb, var(--pink-candy) 85%, transparent);
 }
 
-/* liste infos */
+/* liste */
 .card ul{
   list-style: none;
   padding: 0;
@@ -212,13 +210,13 @@
   color: color-mix(in srgb, var(--cream) 80%, transparent);
 }
 
-/* mots clés (Auteur, Éditeur, etc.) */
+/* texte */
 .card li strong{
   color: color-mix(in srgb, var(--pink-candy) 95%, transparent);
   font-weight: 600;
 }
 
-/* léger glow au survol (cohérent avec le site) */
+/* glow */
 .card:hover{
   box-shadow:
     0 26px 74px color-mix(in srgb, black 65%, transparent),
@@ -227,9 +225,7 @@
 
 
 /* =========================================================
-   CARDS INFOS — rendu comme l’image (dégradé violet -> rose,
-   gros arrondi, icône en haut à gauche, titre "tech", texte sombre)
-   HTML inchangé
+   CARDS INFOS
    ========================================================= */
 
 .cards__infos{
@@ -259,7 +255,7 @@
   overflow: hidden;
 }
 
-/* icône en haut à gauche (petite, comme sur l'image) */
+/* icône */
 .cards__infos__item img{
   width: 100%;
   height: auto;
@@ -297,18 +293,17 @@
   opacity: 0.95;
 }
 
-/* optionnel : espace visuel entre la carte et le bord écran (si besoin) */
+/* espace */
 .cards__infos__item + .cards__infos__item{
   margin-top: 0;
 }
 
 
 /* =========================================================
-   TIMELINE MATILDA — VERSION CORRIGÉE
-   Points clairement à droite de la ligne
+   TIMELINE MATILDA
    ========================================================= */
 
-/* ===== CONTENEUR ===== */
+/* Conteneur */
 .card-list__matilda{
   position: relative;
   width: min(520px, 100%);
@@ -320,11 +315,12 @@
   padding: 8px 0 48px;
 }
 
-/* ===== LIGNE ===== */
+/* Ligne */
 .card-list__matilda::before{
   content:"";
   position: absolute;
   top: 0;
+  bottom: 14px;
 
   left: 22px;
   width: 3px;
@@ -340,32 +336,30 @@
   box-shadow: 0 0 18px color-mix(in srgb, var(--pink-candy) 25%, transparent);
 }
 
-/* ===== FLÈCHE ===== */
+/* Flèche */
 .card-list__matilda::after{
-    content:"";
-    position: absolute;
-    left: 24px;
-    bottom: -2px;
-    transform: translateX(-50%);
+  content:"";
+  position: absolute;
+  left: 22px;
+  bottom: -2px;
+  transform: translateX(-50%);
 
-    width: 0;
-    height: 0;
+  width: 0;
+  height: 0;
 
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-top: 12px solid color-mix(in srgb, var(--pink-candy) 85%, transparent);
-
-    filter: drop-shadow(0 0 10px color-mix(in srgb, var(--pink-candy) 25%, transparent));
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 12px solid color-mix(in srgb, var(--pink-candy) 85%, transparent);
 }
 
 /* =========================================================
-   CARD
+   CARD MATILDA
    ========================================================= */
 
 .card__matilda{
   position: relative;
 
-  /* espace clair pour ligne + points */
+  /* espace */
   margin-left: 72px;
 
   padding: 18px 18px 16px;
@@ -384,12 +378,11 @@
     0 0 18px color-mix(in srgb, var(--purple) 22%, transparent);
 }
 
-/* ===== POINT (NETTEMENT À DROITE DE LA LIGNE) ===== */
+/* Point */
 .card__matilda::before{
   content:"";
   position: absolute;
 
-  /* ligne à 22px → point à 38px → espace visible */
   left: -34px;
   top: 50%;
   transform: translateY(-50%);
@@ -405,9 +398,7 @@
     0 0 18px color-mix(in srgb, var(--pink-candy) 25%, transparent);
 }
 
-/* =========================================================
-   TYPO
-   ========================================================= */
+/* Typo */
 
 .card__matilda h2{
   margin: 0 0 6px;
@@ -445,7 +436,7 @@
 }
 
 /* =========================================================
-  CARDS FILMS — version rectangulaire, image entière
+  CARDS FILMS
   ========================================================= */
 
 .cards__principal{
@@ -465,28 +456,27 @@
    0 0 20px color-mix(in srgb, var(--purple) 20%, transparent);
 }
 
-/* lien plein bloc */
+/* lien */
 .cards__principal-content > a{
   display: block;
   color: inherit;
   text-decoration: none;
 }
 
-/* ================= IMAGE ================= */
-/* image NON rognée, affichée entièrement */
+/* image */
 .cards__principal-content img,
 .cards__films__item img{
   width: 100%;
-  height: auto;          /* clé : image entière */
+  height: auto;
   display: block;
 
-  object-fit: contain;  /* pas de crop */
+  object-fit: contain;
   background: color-mix(in srgb, var(--dark-blue) 55%, transparent);
 
   filter: saturate(1.05) contrast(1.04);
 }
 
-/* ================= TEXTE ================= */
+/* Texte */
 .cards__principal-content div,
 .cards__films__item div{
   padding: 16px 18px 20px;
@@ -501,7 +491,7 @@
   row-gap: 12px;
 }
 
-/* Uniformiser le fond des cards__films (même teinte partout) */
+/* Uniformiser le fond */
 .cards__films__item div{
   background: transparent;
 }
@@ -546,16 +536,13 @@
 
 
 /* =========================================================
-   AUTRES PROJETS — version mobile SAFE
-   - pas de débordement écran
-   - image collée à la card
-   - aucun fond violet sur l’image
+   AUTRES PROJETS
    ========================================================= */
 
 /* galerie */
 .projects__gallery{
   width: 100%;
-  max-width: 393px;     /* largeur téléphone */
+  max-width: 393px;
   margin: 0 auto;
   padding: 24px 16px 40px;
 
@@ -566,7 +553,7 @@
 /* card */
 .project__item{
   width: 100%;
-  overflow: hidden;    /* empêche tout débordement */
+  overflow: hidden;
   border-radius: 14px;
 
   background: var(--black-blue);
@@ -576,23 +563,23 @@
     0 16px 48px color-mix(in srgb, var(--black-blue) 80%, transparent);
 }
 
-/* image — collée à la card, sans violet */
+/* image */
 .project__item img{
   display: block;
   width: 100%;
   height: auto;
 
-  object-fit: contain;   /* image entière */
+  object-fit: contain;
   object-position: center;
 
-  background: none;      /* AUCUN fond */
-  margin-bottom: 12px;   /* espace entre image et texte */
+  background: none;
+  margin-bottom: 12px;
 }
 
 /* zone texte */
 .project__item > div{
   display: flex;
-  flex-direction: column;  /* textes l'un sous l'autre */
+  flex-direction: column;
   gap: 6px;
 
   padding: 0 16px 16px;
@@ -619,4 +606,78 @@
   font-size: 0.75rem;
 
   color: var(--purple);
+}
+
+/*==========================================================
+  GLOSSAIRE
+  =========================================================*/
+.glossaire {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Card */
+.glossaire__item {
+  position: relative;
+  padding: 1.5rem 1.75rem;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  margin-top: 40px;
+
+  /* Fond */
+  background:
+   radial-gradient(
+    120% 140% at 20% 10%,
+    color-mix(in srgb, var(--pink-candy) 20%, transparent) 0%,
+    transparent 55%
+   ),
+   linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--dark-blue) 85%, transparent) 0%,
+    color-mix(in srgb, var(--black-blue) 85%, transparent) 100%
+   );
+
+  /* Bordure néon */
+  border: 1px solid color-mix(in srgb, var(--purple) 70%, transparent);
+
+  /* Ombres */
+  box-shadow:
+   0 0 0.75rem color-mix(in srgb, var(--purple) 35%, transparent),
+   0 1rem 2.5rem rgba(0, 0, 0, 0.6);
+
+  color: var(--cream);
+  font-family: var(--font-family-space-mono);
+}
+
+/* Titre */
+.glossaire__item h3 {
+  margin: 0 0 0.75rem;
+  font-family: var(--font-family-audiowide);
+  font-size: var(--font-size-24);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-0);
+  color: var(--pink-candy);
+
+  /* effet glow */
+  text-shadow:
+   0 0 0.5rem color-mix(in srgb, var(--pink-candy) 60%, transparent),
+   0 0 1.25rem color-mix(in srgb, var(--purple) 60%, transparent);
+}
+
+/* Texte */
+.glossaire__item p {
+  margin: 0;
+  font-size: var(--font-size-13);
+  line-height: 1.6;
+  color: var(--cream);
+  opacity: 0.95;
+}
+
+/* Effet hover subtil */
+.glossaire__item:hover {
+  transform: translateY(-2px);
+  box-shadow:
+   0 0 1.25rem color-mix(in srgb, var(--purple) 50%, transparent),
+   0 1.25rem 3rem rgba(0, 0, 0, 0.7);
 }

@@ -1,6 +1,5 @@
 /* =========================================================
-   HERO — matching image (SANS nouvelles classes, SANS bouton,
-   SANS @media)
+   HERO
    ========================================================= */
 
 .hero{
@@ -17,7 +16,7 @@
   background: url("/assets/img/head/hero.webp") center / cover no-repeat;
 }
 
-/* overlay galaxie sombre + glow violet/rose */
+/* overlay */
 .hero::before{
   content:"";
   position: absolute;
@@ -32,7 +31,7 @@
   );
 }
 
-/* grain étoiles discret */
+/* grain */
 .hero::after{
   content:"";
   position:absolute;
@@ -50,7 +49,7 @@
   opacity: 1;
 }
 
-/* contenu centré */
+/* contenu */
 .hero__content{
   position: relative;
   z-index: 1;
@@ -60,7 +59,7 @@
   gap: 14px;
 }
 
-/* portrait violet */
+/* portrait */
 .hero__portrait{
   width: 190px;
   height: 190px;
@@ -75,7 +74,7 @@
   filter: saturate(1.06) contrast(1.05) hue-rotate(12deg);
 }
 
-/* titre néon */
+/* titre */
 .hero h1{
   margin: 6px 0 0;
   font-family: var(--font-family-audiowide);
@@ -89,7 +88,7 @@
     0 0 28px color-mix(in srgb, var(--pink-candy) 18%, transparent);
 }
 
-/* sous-titre rose */
+/* sous-titre */
 .hero h3{
   margin: 0;
   font-family: var(--font-family-audiowide);
@@ -100,7 +99,7 @@
   text-shadow: 0 0 16px color-mix(in srgb, var(--pink-candy) 25%, transparent);
 }
 
-/* texte descriptif */
+/* texte */
 .hero__subtitle{
   width: min(560px, 100%);
   margin-top: 10px;
@@ -113,7 +112,7 @@
   text-shadow: 0 0 10px color-mix(in srgb, black 35%, transparent);
 }
 
-/* lien violet (Université de Cambridge) */
+/* lien */
 .hero__subtitle a{
   color: color-mix(in srgb, var(--pink-candy) 95%, transparent);
   text-decoration: none;

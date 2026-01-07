@@ -1,5 +1,5 @@
 /* =========================================================
-   FOOTER — version finale alignée (comme image 1)
+   FOOTER
    ========================================================= */
 
 .footer{
@@ -19,7 +19,7 @@
   width: 100%;
   padding: 0 20px;
   display: grid;
-  gap: 18px; /* serré */
+  gap: 18px;
 }
 
 /* sections */
@@ -58,7 +58,7 @@
   margin: 0;
   padding: 0;
   display: grid;
-  gap: 6px; /* très serré */
+  gap: 6px;
 }
 
 /* liens */
@@ -83,17 +83,17 @@
 
 
 /* =========================
-   SOCIAL — icônes brutes alignées
+   SOCIAL
    ========================= */
 
 .footer__social{
   display: flex;
-  flex-direction: row;      /* horizontal */
+  flex-direction: row;
   align-items: center;
   gap: 14px;
   margin-top: 6px;
 
-  flex-wrap: nowrap;        /* ➜ empêche tout retour à la ligne */
+  flex-wrap: nowrap;
 }
 
 /* liens */
@@ -110,10 +110,10 @@
   border-radius: 0;
   box-shadow: none;
 
-  flex-shrink: 0;           /* ➜ empêche l'icône d'être compressée verticalement */
+  flex-shrink: 0;
 }
 
-/* ICÔNE PURE (pas de rond, pas de fond) */
+/* Icone */
 .footer__social .icon{
   width: 26px;
   height: 26px;
