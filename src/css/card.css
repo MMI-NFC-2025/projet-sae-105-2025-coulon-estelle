@@ -586,35 +586,29 @@
   object-position: center;
 
   background: none;      /* AUCUN fond */
+  margin-bottom: 12px;   /* espace entre image et texte */
 }
 
 /* zone texte */
 .project__item > div{
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 12px;
+  flex-direction: column;  /* textes l'un sous l'autre */
+  gap: 6px;
 
-  padding: 14px 16px;
+  padding: 0 16px 16px;
 
   background: transparent;
-  border-top: 1px solid color-mix(in srgb, var(--purple) 25%, transparent);
 }
 
 /* titre */
 .project__item h2{
   margin: 0;
-  max-width: 70%;
 
   font-family: var(--font-family-audiowide);
   font-size: 1.1rem;
   line-height: 1.1;
 
   color: var(--cream);
-
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 /* auteur */
@@ -625,5 +619,4 @@
   font-size: 0.75rem;
 
   color: var(--purple);
-  white-space: nowrap;
 }
