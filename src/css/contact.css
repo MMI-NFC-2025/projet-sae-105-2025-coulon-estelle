@@ -1,0 +1,165 @@
+/* =========================================================
+   CONTACT — rendu comme l’image (carte violette, champs arrondis,
+   labels mono, bouton dégradé)
+   HTML inchangé
+   ========================================================= */
+
+.main--contact{
+  padding: 22px 16px 48px;
+}
+
+/* bloc contact centré */
+.contact{
+  width: min(520px, 100%);
+  margin: 0 auto;
+}
+
+/* header (si tu veux le masquer comme l’image, tu peux le garder discret) */
+.contact__header{
+  margin: 0 0 16px;
+  text-align: center;
+}
+.contact__title{
+  margin: 0;
+  font-family: var(--font-family-audiowide);
+  color: var(--pink-candy);
+  text-shadow: 0 0 16px color-mix(in srgb, var(--purple) 35%, transparent);
+}
+.contact__subtitle{
+  margin: 6px 0 0;
+  font-family: var(--font-family-space-mono);
+  color: color-mix(in srgb, var(--cream) 70%, transparent);
+}
+
+/* ===== carte formulaire (le grand cadre de l’image) ===== */
+.contact-form{
+  border-radius: 18px;
+  border: 1px solid color-mix(in srgb, var(--purple) 45%, transparent);
+
+  background:
+    /* voile neutre basé sur ton fond */
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--dark-blue) 55%, transparent) 0%,
+      color-mix(in srgb, var(--black-blue) 65%, transparent) 100%
+    );
+
+  box-shadow:
+    0 20px 60px color-mix(in srgb, var(--black-blue) 80%, transparent),
+    0 0 22px color-mix(in srgb, var(--purple) 22%, transparent);
+
+  padding: 22px 18px 20px;
+  display: grid;
+  gap: 18px;
+
+  /* si ton body a déjà les étoiles, laisse; sinon ça marche quand même */
+}
+
+/* ===== groupes ===== */
+.form-group{
+  display: grid;
+  gap: 10px;
+}
+
+/* labels mono, blancs comme l’image */
+.form-group__label{
+  font-family: var(--font-family-space-mono);
+  font-size: var(--font-size-13);
+  color: var(--cream);
+  opacity: 0.9;
+}
+
+/* champs (inputs) — violet doux, arrondi */
+.form-group__input,
+.form-group__textarea{
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid color-mix(in srgb, var(--purple) 35%, transparent);
+
+  background: color-mix(in srgb, var(--purple) 30%, transparent);
+  color: var(--cream);
+
+  font-family: var(--font-family-space-mono);
+  font-size: var(--font-size-13);
+
+  padding: 14px 14px;
+  outline: none;
+
+  box-shadow:
+    inset 0 0 0 1px color-mix(in srgb, var(--black-blue) 30%, transparent);
+}
+
+/* textarea plus “grand bloc” comme l’image */
+.form-group__textarea{
+  min-height: 160px;
+  resize: none;
+  padding: 16px 14px;
+}
+
+/* placeholders rosés */
+.form-group__input::placeholder,
+.form-group__textarea::placeholder{
+  color: color-mix(in srgb, var(--pink-candy) 65%, var(--cream));
+  opacity: 0.75;
+}
+
+/* focus discret (pas flashy) */
+.form-group__input:focus,
+.form-group__textarea:focus{
+  border-color: color-mix(in srgb, var(--pink-candy) 45%, transparent);
+  box-shadow:
+    0 0 0 3px color-mix(in srgb, var(--purple) 25%, transparent);
+}
+
+/* ===== bouton full width comme l’image ===== */
+.btn--full{
+  width: 100%;
+}
+
+/* tu as déjà .btn.btn--primary ; ici on force le look image (grand, dégradé, arrondi) */
+.contact-form .btn.btn--primary{
+  margin-top: 6px;
+  height: 56px;
+
+  border-radius: 12px;
+  border: 1px solid color-mix(in srgb, var(--pink-candy) 35%, transparent);
+
+  background: linear-gradient(
+    90deg,
+    var(--pink-candy) 0%,
+    var(--purple) 55%,
+    var(--ocean-blue) 100%
+  );
+
+  color: var(--black-blue);
+  font-family: var(--font-family-space-mono);
+  font-weight: 700;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  box-shadow:
+    0 14px 36px color-mix(in srgb, var(--black-blue) 70%, transparent),
+    0 0 22px color-mix(in srgb, var(--pink-candy) 18%, transparent);
+
+  text-decoration: none;
+}
+
+/* icône avion (si tu veux qu’elle soit discrète) */
+.contact-form .btn.btn--primary img{
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) saturate(100%);
+  opacity: 0.85;
+}
+
+/* hover léger */
+.contact-form .btn.btn--primary:hover{
+  transform: translateY(-1px);
+  filter: brightness(1.02);
+}
+.contact-form .btn.btn--primary:active{
+  transform: translateY(0);
+}

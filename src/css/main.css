@@ -15,7 +15,7 @@ body{
 
 img{ max-width: 100%; display: block; }
 a{ color: inherit; text-decoration: none; }
-p{ margin: 0 0 12px; color: rgba(234, 227, 218, 0.78); }
+p{ margin: 0 0 12px; color: color-mix(in srgb, var(--cream) 78%, transparent); }
 
 h1,h2,h3{
   margin: 0;

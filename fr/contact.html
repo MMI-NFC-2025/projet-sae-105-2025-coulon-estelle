@@ -17,11 +17,11 @@
 <body class="home">
 
 <header class="header">
-  <a href="/index.html" class="header__logo" aria-label="Accueil Jocelyn Bell">
+  <a href="/fr/index.html" class="header__logo" aria-label="Accueil Jocelyn Bell">
     <img src="/assets/icons/Logo.svg" alt="Logo Jocelyn Bell">
   </a>
 
-  <a href="/index-en.html" class="header__logo"  aria-label="Accueil Jocelyn Bell">
+  <a href="/en/contact.html" class="header__logo"  aria-label="contact">
         <img src="/assets/icons/icons-24x24/Globe.svg" alt="Logo Jocelyn Bell">
   </a>
 
@@ -65,6 +65,35 @@
       <a href="/fr/contact-film.html" class="btn btn--primary">En savoir plus sur le film</a>
     </div>
   </section>
+
+  <main class="main main--contact">
+    <section class="contact" aria-labelledby="contact-title">
+        <header class="contact__header">
+            <h1 id="contact-title" class="contact__title">Contact</h1>
+            <p class="contact__subtitle">Envoyez-nous un message</p>
+        </header>
+
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <label for="name" class="form-group__label">Nom complet</label>
+                <input type="text" id="name" name="name" class="form-group__input" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-group__label">Adresse email</label>
+                <input type="email" id="email" name="email" class="form-group__input" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message" class="form-group__label">Votre message</label>
+                <textarea id="message" name="message" class="form-group__textarea" rows="6" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">
+                <span>Envoyer le message</span>
+            </button>
+        </form>
+    </section>
 
   <section class="links">
     <a href="/fr/matilda.html" class="btn">

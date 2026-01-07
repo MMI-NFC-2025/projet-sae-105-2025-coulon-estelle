@@ -1,48 +1,48 @@
 <!DOCTYPE html>
-<footer class="footer">
-    <div class="footer__content">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Science, Faith and Cosmic Mystery</title>
 
-        <section class="footer__section">
-            <img src="/assets/icons/Logo.svg" alt="Jocelyn Bell Logo">
-            <h3>Jocelyn Bell</h3>
-        </section>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
 
-        <section class="footer__section">
-            <h3>Useful Links</h3>
-            <ul>
-                <li><a href="/en/about-us.html">About</a></li>
-                <li><a href="/en/contact.html">Contact</a></li>
-                <li><a href="/en/glossary.html">Glossary</a></li>
-                <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Legal Notice</a></li>
-            </ul>
-        </section>
+    <meta name="description" content="Contact page related to the Contact film and scientific themes.">
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
 
-        <section class="footer__section">
-            <h3>Educational Project</h3>
-            <ul>
-                <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">MMI Department of Montbéliard</a></li>
-                <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Marie & Louis Pasteur University</a></li>
-            </ul>
-        </section>
+<body class="home">
 
-        <section class="footer__section">
-            <h3>Social Networks</h3>
-            <ul class="footer__social">
-                <li><a href="#" aria-label="Facebook" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/Facebook.svg" alt=""></a></li>
-                <li><a href="#" aria-label="Instagram" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/Instagram.svg" alt=""></a></li>
-                <li><a href="#" aria-label="X" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/X.svg" alt=""></a></li>
-            </ul>
-        </section>
+<header class="header">
+    <a href="/en/index-en.html" class="header__logo" aria-label="Home Jocelyn Bell">
+        <img src="/assets/icons/Logo.svg" alt="Jocelyn Bell Logo">
+    </a>
 
-        <p class="footer__bottom">
-            © 2025 Jocelyn Bell – Project created by Estelle Coulon as part of an individual S1 project at the MMI department of Montbéliard
-        </p>
+    <a href="/fr/contact.html" class="header__logo"  aria-label="Contact">
+                <img src="/assets/icons/icons-24x24/Globe.svg" alt="Jocelyn Bell Logo">
+    </a>
 
-    </div>
-</footer>
+    <h3 class="header__title">Jocelyn Bell</h3>
+
+    <button class="header__menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+            <li><a href="/en/matilda.html">Jocelyn Bell</a></li>
+            <li><a href="/en/book.html">Astronomy, the Essentials Simply Explained</a></li>
+            <li><a href="/en/pulsar.html">Pulsars</a></li>
+            <li><a href="/en/film.html">Interstellar</a></li>
+            <li><a href="/en/list-matilda.html">Matilda</a></li>
         </ul>
         <ul>
-            <li><a href="/en/film-list.html">Related Films</a></li>
+            <li><a href="/en/list-film.html">Related Films</a></li>
             <li><a href="/en/other-projects.html">Other Projects</a></li>
         </ul>
     </nav>
@@ -52,28 +52,57 @@
 
     <section class="hero">
 
-      <div class="hero__content">
-        <img src="/assets/img/head/contact.webp" alt="Contact film poster" class="hero__portrait">
+        <div class="hero__content">
+            <img src="/assets/img/head/contact.webp" alt="Contact film poster" class="hero__portrait">
 
-        <h1>Contact</h1>
-        <h3>Science, Faith and Cosmic Mystery</h3>
+            <h1>Contact</h1>
+            <h3>Science, Faith and Cosmic Mystery</h3>
 
-        <p class="hero__subtitle">
-          A scientific inquiry into the existence of extraterrestrial life. This film explores the themes of perseverance, doubt, and the quest for answers about our place in the universe.
-        </p>
+            <p class="hero__subtitle">
+                A scientific investigation into the existence of extraterrestrial life. This film explores themes of perseverance, doubt, and the quest for answers about our place in the universe.
+            </p>
 
-        <a href="/en/contact-film.html" class="btn btn--primary">Learn More About the Film</a>
-      </div>
+            <a href="/en/contact-film.html" class="btn btn--primary">Learn more about the film</a>
+        </div>
     </section>
+
+    <main class="main main--contact">
+        <section class="contact" aria-labelledby="contact-title">
+                <header class="contact__header">
+                        <h1 id="contact-title" class="contact__title">Contact</h1>
+                        <p class="contact__subtitle">Send us a message</p>
+                </header>
+
+                <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                                <label for="name" class="form-group__label">Full name</label>
+                                <input type="text" id="name" name="name" class="form-group__input" required>
+                        </div>
+
+                        <div class="form-group">
+                                <label for="email" class="form-group__label">Email address</label>
+                                <input type="email" id="email" name="email" class="form-group__input" required>
+                        </div>
+
+                        <div class="form-group">
+                                <label for="message" class="form-group__label">Your message</label>
+                                <textarea id="message" name="message" class="form-group__textarea" rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--full">
+                                <span>Send message</span>
+                        </button>
+                </form>
+        </section>
 
     <section class="links">
         <a href="/en/matilda.html" class="btn">
-            Learn More About Jocelyn Bell
+            Learn more about Jocelyn Bell
             <img src="/assets/icons/icons-29x29/External%20Link.svg" alt="">
         </a>
 
-        <a href="/en/glossaire.html" class="btn btn2">
-            Consult the Glossary
+        <a href="/en/glossary.html" class="btn btn2">
+            View the glossary
             <img src="/assets/icons/icons-29x29/External%20Link.svg" alt="">
         </a>
     </section>
@@ -81,42 +110,42 @@
 </main>
 
 <footer class="footer">
-    <div class="footer-content">
+    <div class="footer__content">
 
-        <div class="footer-brand">
+        <section class="footer__section">
             <img src="/assets/icons/Logo.svg" alt="Jocelyn Bell Logo">
-            <p class="footer-title">Jocelyn Bell</p>
-        </div>
+            <h3>Jocelyn Bell</h3>
+        </section>
 
-        <div class="footer-col">
-            <p class="footer-title">Useful Links</p>
+        <section class="footer__section">
+            <h3>Useful links</h3>
             <ul>
                 <li><a href="/en/about.html">About</a></li>
                 <li><a href="/en/contact.html">Contact</a></li>
-                <li><a href="/en/glossary.html" aria-current="page">Glossary</a></li>
-                <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Legal Notice</a></li>
+                <li><a href="/en/glossary.html">Glossary</a></li>
+                <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Legal notice</a></li>
             </ul>
-        </div>
+        </section>
 
-        <div class="footer-col">
-            <p class="footer-title">Educational Project</p>
+        <section class="footer__section">
+            <h3>Educational project</h3>
             <ul>
-                <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Department MMI of Montbéliard</a></li>
-                <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">University Marie & Louis Pasteur</a></li>
+                <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Montbéliard MMI Department</a></li>
+                <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Marie & Louis Pasteur University</a></li>
             </ul>
-        </div>
+        </section>
 
-        <div class="footer-col">
-            <p class="footer-title">Social Media</p>
-            <ul class="social">
+        <section class="footer__section">
+            <h3>Social media</h3>
+            <ul class="footer__social">
                 <li><a href="#" aria-label="Facebook" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/Facebook.svg" alt=""></a></li>
                 <li><a href="#" aria-label="Instagram" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/Instagram.svg" alt=""></a></li>
                 <li><a href="#" aria-label="X" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/X.svg" alt=""></a></li>
             </ul>
-        </div>
+        </section>
 
-        <p class="footer-bottom">
-            © 2025 Jocelyn Bell – Project created by Estelle Coulon as part of an individual project in S1 at the MMI department of Montbéliard
+        <p class="footer__bottom">
+            © 2025 Jocelyn Bell – Project created by Estelle Coulon as part of an individual S1 project at the Montbéliard MMI Department
         </p>
 
     </div>

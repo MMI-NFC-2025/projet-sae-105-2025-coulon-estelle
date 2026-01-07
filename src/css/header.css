@@ -45,7 +45,7 @@
   line-height: 1;
   letter-spacing: 0.04em;
   color: var(--pink-candy);
-  text-shadow: 0 0 14px rgba(236, 111, 253, 0.18);
+  text-shadow: 0 0 14px color-mix(in srgb, var(--pink-candy) 18%, transparent);
   pointer-events: none;
 }
 
@@ -75,7 +75,7 @@
   left: 50%;
   width: 22px;
   height: 2px;
-  background: rgba(234, 227, 218, 0.92);
+  background: color-mix(in srgb, var(--cream) 92%, transparent);
   border-radius: 999px;
   transform-origin: center;
   transition: transform .2s ease, opacity .2s ease;

@@ -1,16 +1,177 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Related Films</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+
+    <meta name="description" content="A selection of films and documentaries that highlight women scientists.">
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <a href="/en/index-en.html" class="header__logo" aria-label="Home Jocelyn Bell">
+        <img src="/assets/icons/Logo.svg" alt="Logo Jocelyn Bell">
+    </a>
+
+    <a href="/fr/liste-film.html" class="header__logo"  aria-label="liste des films">
+                <img src="/assets/icons/icons-24x24/Globe.svg" alt="Logo Jocelyn Bell">
+    </a>
+
+    <h3 class="header__title">Jocelyn Bell</h3>
+
+    <button class="header__menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+            <li><a href="/en/matilda.html">Jocelyn Bell</a></li>
+            <li><a href="/en/book.html">Astronomy, Simply Essential</a></li>
+            <li><a href="/en/pulsar.html">Pulsars</a></li>
+            <li><a href="/en/film.html">Interstellar</a></li>
+            <li><a href="/en/matilda-list.html">Matilda</a></li>
+        </ul>
+        <ul>
+            <li><a href="/en/film-list.html" aria-current="page">Related Films</a></li>
+            <li><a href="/en/other-projects.html">Other Projects</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="page-wrap">
+
+    <section class="hero">
+
+        <div class="hero__content">
+            <img src="/assets/img/head/film.webp" alt="Posters of scientific films" class="hero__portrait">
+
+            <h1>Related Films</h1>
+            <h3>Cinema and Female Representation</h3>
+
+            <p class="hero__subtitle">
+                Cinematic works that highlight women scientists and explore themes of discovery, perseverance, and scientific recognition.
+            </p>
+
+            <a href="/en/film.html" class="btn btn--primary">Discover Interstellar</a>
+        </div>
+    </section>
+
+    <section class="cards__principal" role="region" aria-label="List of related films">
+
+        <article class="cards__principal-content">
+            <a href="/en/film.html">
+            <img src="/assets/img/cards/films/Interstellar.webp" alt="Interstellar film poster" loading="lazy">
+            <div>
+                <h2>Interstellar</h2>
+                <p>2014</p>
+                <p>
+                    Where science meets emotion. Between black holes, relativity and cosmic mysteries,
+                    this film explores the limits of spacetime.
+                </p>
+            </div>
+            </a>
+        </article>
+
+        <article class="cards__principal-content">
+            <a href="/en/contact-film.html">
+            <img src="/assets/img/cards/films/Contact.webp" alt="Contact film poster" loading="lazy">
+            <div>
+                <h2>Contact</h2>
+                <p>1997</p>
+                <p>
+                    Between science and spirituality, Contact tells the quest of a scientist
+                    who captures a signal from the depths of the cosmos.
+                </p>
+            </div>
+            </a>
+        </article>
+
+        <article class="cards__principal-content">
+            <img src="/assets/img/cards/films/The-Theory-of-Everything.webp" alt="The Theory of Everything film poster" loading="lazy">
+            <div>
+                <h2>The Theory of Everything</h2>
+                <p>2014</p>
+                <p>
+                    This film traces Stephen Hawking's life, where the fragility of the body contrasts with the infinity of thought.
+                    Between love and science, it celebrates the power of the human spirit.
+                </p>
+            </div>
+        </article>
+
+        <article class="cards__principal-content">
+            <img src="/assets/img/cards/films/Cosmos.webp" alt="Cosmos: A Spacetime Odyssey series poster" loading="lazy">
+            <div>
+                <h2>Cosmos: A Spacetime Odyssey</h2>
+                <p>2014</p>
+                <p>
+                    This series transforms science into an adventure story.
+                    Driven by spectacular visuals, it takes us through time, stars and discoveries.
+                </p>
+            </div>
+        </article>
+
+        <article class="cards__principal-content">
+            <img src="/assets/img/cards/films/The-Most-Unknown.webp" alt="The Most Unknown film poster" loading="lazy">
+            <div>
+                <h2>The Most Unknown</h2>
+                <p>2018</p>
+                <p>
+                    Nine researchers explore the deepest questions of our existence.
+                    From dark matter to consciousness, this documentary reminds us that every answer opens new mysteries.
+                </p>
+            </div>
+        </article>
+
+        <article class="cards__principal-content">
+            <img src="/assets/img/cards/films/Hidden-Figures.webp" alt="Hidden Figures film poster" loading="lazy">
+            <div>
+                <h2>Hidden Figures</h2>
+                <p>2016</p>
+                <p>
+                    Inspired by a true story, the film highlights three NASA mathematicians who remained in the shadows too long.
+                    Their genius allowed humanity to reach the stars.
+                </p>
+            </div>
+        </article>
+
+    </section>
+
+    <section class="links">
+        <a href="/en/matilda.html" class="btn">
+            Learn more about Jocelyn Bell
+            <img src="/assets/icons/icons-29x29/External%20Link.svg" alt="">
+        </a>
+
+        <a href="/en/glossary.html" class="btn btn2">
+            Consult the glossary
+            <img src="/assets/icons/icons-29x29/External%20Link.svg" alt="">
+        </a>
+    </section>
+
+</main>
+
 <footer class="footer">
     <div class="footer__content">
 
         <section class="footer__section">
-            <img src="/assets/icons/Logo.svg" alt="Jocelyn Bell Logo">
+            <img src="/assets/icons/Logo.svg" alt="Logo Jocelyn Bell">
             <h3>Jocelyn Bell</h3>
         </section>
 
         <section class="footer__section">
             <h3>Useful Links</h3>
             <ul>
-                <li><a href="/en/about-us.html">About</a></li>
+                <li><a href="/en/about.html">About</a></li>
                 <li><a href="/en/contact.html">Contact</a></li>
                 <li><a href="/en/glossary.html">Glossary</a></li>
                 <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Legal Notice</a></li>
@@ -35,168 +196,7 @@
         </section>
 
         <p class="footer__bottom">
-            © 2025 Jocelyn Bell – Project created by Estelle Coulon as part of an individual S1 project at the MMI department of Montbéliard
-        </p>
-
-    </div>
-</footer>
-        </ul>
-        <ul>
-            <li><a href="/en/film-list.html">Related Films</a></li>
-            <li><a href="/en/other-projects.html">Other Projects</a></li>
-        </ul>
-    </nav>
-</header>
-
-<main class="page-wrap">
-
-    <section class="hero">
-
-      <div class="hero__content">
-        <img src="/assets/img/head/film.webp" alt="Scientific film posters" class="hero__portrait">
-
-        <h1>Correlated Films</h1>
-        <h3>Cinema and Female Representation</h3>
-
-        <p class="hero__subtitle">
-          Cinematographic works that highlight women scientists and explore themes of discovery, perseverance, and scientific recognition.
-        </p>
-
-        <a href="/en/film.html" class="btn btn--primary">Discover Interstellar</a>
-      </div>
-    </section>
-
-    <section class="cards__films" role="region" aria-label="List of correlated films">
-
-        <article class="cards__films__item">
-            <a href="/en/film.html">
-            <img src="/assets/img/cards/films/Interstellar.webp" alt="Interstellar movie poster" loading="lazy">
-            <div>
-                <h2>Interstellar</h2>
-                <p>2014</p>
-                <p>
-                    Where science meets emotion. Between black holes, relativity and the mysteries of the cosmos,
-                    this film explores the limits of spacetime.
-                </p>
-            </div>
-            </a>
-        </article>
-
-        <article class="cards__films__item">
-            <a href="/en/contact-film.html">
-            <img src="/assets/img/cards/films/Contact.webp" alt="Contact movie poster" loading="lazy">
-            <div>
-                <h2>Contact</h2>
-                <p>1997</p>
-                <p>
-                    Between science and spirituality, Contact tells the quest of a scientist
-                    who captures a signal from the depths of the cosmos.
-                </p>
-            </div>
-            </a>
-        </article>
-
-        <article class="cards__films__item">
-            <img src="/assets/img/cards/films/The-Theory-of-Everything.webp" alt="The Theory of Everything movie poster" loading="lazy">
-            <div>
-                <h2>The Theory of Everything</h2>
-                <p>2014</p>
-                <p>
-                    This film traces Stephen Hawking's life, where the fragility of the body contrasts with the infinity of thought.
-                    Between love and science, it celebrates the strength of the human spirit.
-                </p>
-            </div>
-        </article>
-
-        <article class="cards__films__item">
-            <img src="/assets/img/cards/films/Cosmos.webp" alt="Cosmos: A Spacetime Odyssey series poster" loading="lazy">
-            <div>
-                <h2>Cosmos: A Spacetime Odyssey</h2>
-                <p>2014</p>
-                <p>
-                    This series transforms science into an adventure story.
-                    Carried by spectacular images, it takes us through time, stars and discoveries.
-                </p>
-            </div>
-        </article>
-
-        <article class="cards__films__item">
-            <img src="/assets/img/cards/films/The-Most-Unknown.webp" alt="The Most Unknown film poster" loading="lazy">
-            <div>
-                <h2>The Most Unknown</h2>
-                <p>2018</p>
-                <p>
-                    Nine researchers explore the deepest questions of our existence.
-                    From dark matter to consciousness, this documentary reminds us that each answer opens new mysteries.
-                </p>
-            </div>
-        </article>
-
-        <article class="cards__films__item">
-            <img src="/assets/img/cards/films/Hidden-Figures.webp" alt="Hidden Figures movie poster" loading="lazy">
-            <div>
-                <h2>Hidden Figures</h2>
-                <p>2016</p>
-                <p>
-                    Inspired by a true story, the film highlights three NASA mathematicians who remained in the shadows for too long.
-                    Their genius allowed humanity to reach the stars.
-                </p>
-            </div>
-        </article>
-
-    </section>
-
-    <section class="links">
-        <a href="/en/matilda.html" class="btn">
-            Learn more about Jocelyn Bell
-            <img src="/assets/icons/icons-29x29/External%20Link.svg" alt="">
-        </a>
-
-        <a href="/en/glossary.html" class="btn btn2">
-            Consult the glossary
-            <img src="/assets/icons/icons-29x29/External%20Link.svg" alt="">
-        </a>
-    </section>
-
-</main>
-
-<footer class="footer">
-    <div class="footer-content">
-
-        <div class="footer-brand">
-            <img src="/assets/icons/Logo.svg" alt="Jocelyn Bell Logo">
-            <p class="footer-title">Jocelyn Bell</p>
-        </div>
-
-        <div class="footer-col">
-            <p class="footer-title">Useful Links</p>
-            <ul>
-                <li><a href="/en/about.html">About</a></li>
-                <li><a href="/en/contact.html">Contact</a></li>
-                <li><a href="/en/glossary.html" aria-current="page">Glossary</a></li>
-                <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Legal Notice</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-col">
-            <p class="footer-title">Educational Project</p>
-            <ul>
-                <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Department MMI of Montbéliard</a></li>
-                <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">University Marie & Louis Pasteur</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-col">
-            <p class="footer-title">Social Media</p>
-            <ul class="social">
-                <li><a href="#" aria-label="Facebook" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/Facebook.svg" alt=""></a></li>
-                <li><a href="#" aria-label="Instagram" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/Instagram.svg" alt=""></a></li>
-                <li><a href="#" aria-label="X" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/X.svg" alt=""></a></li>
-            </ul>
-        </div>
-
-        <p class="footer-bottom">
-            © 2025 Jocelyn Bell – Project created by Estelle Coulon as part of an individual project in S1 at the MMI department of Montbéliard
+            © 2025 Jocelyn Bell – Project created by Estelle Coulon as part of an individual S1 project at the MMI Department of Montbéliard
         </p>
 
     </div>

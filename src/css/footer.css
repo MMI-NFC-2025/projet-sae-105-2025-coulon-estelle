@@ -8,10 +8,10 @@
 
   background: linear-gradient(
     180deg,
-    rgba(13, 8, 45, 0.95),
-    rgba(27, 36, 73, 0.95)
+    color-mix(in srgb, var(--black-blue) 95%, transparent),
+    color-mix(in srgb, var(--dark-blue) 95%, transparent)
   );
-  border-top: 1px solid rgba(140, 60, 239, 0.35);
+  border-top: 1px solid color-mix(in srgb, var(--purple) 35%, transparent);
 }
 
 /* contenu */
@@ -133,13 +133,13 @@
           mask-size: contain;
           mask-repeat: no-repeat;
 
-  filter: drop-shadow(0 0 10px rgba(236, 111, 253, 0.45));
+  filter: drop-shadow(0 0 10px color-mix(in srgb, var(--pink-candy) 45%, transparent));
 }
 
 /* hover clean */
 .footer__social a:hover .icon{
   transform: scale(1.12);
-  filter: drop-shadow(0 0 16px rgba(236, 111, 253, 0.65));
+  filter: drop-shadow(0 0 16px color-mix(in srgb, var(--pink-candy) 65%, transparent));
   transition: transform 0.15s ease;
 }
 

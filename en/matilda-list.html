@@ -1,49 +1,49 @@
 <!DOCTYPE html>
-<footer class="footer">
-    <div class="footer__content">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matilda List</title>
 
-        <section class="footer__section">
-            <img src="/assets/icons/Logo.svg" alt="Jocelyn Bell Logo">
-            <h3>Jocelyn Bell</h3>
-        </section>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
 
-        <section class="footer__section">
-            <h3>Useful Links</h3>
-            <ul>
-                <li><a href="/en/about-us.html">About</a></li>
-                <li><a href="/en/contact.html">Contact</a></li>
-                <li><a href="/en/glossary.html">Glossary</a></li>
-                <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Legal Notice</a></li>
-            </ul>
-        </section>
+    <meta name="description" content="List of female scientists whose discoveries were minimized or attributed to men (Matilda effect).">
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
 
-        <section class="footer__section">
-            <h3>Educational Project</h3>
-            <ul>
-                <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">MMI Department of Montbéliard</a></li>
-                <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Marie & Louis Pasteur University</a></li>
-            </ul>
-        </section>
+<body>
 
-        <section class="footer__section">
-            <h3>Social Networks</h3>
-            <ul class="footer__social">
-                <li><a href="#" aria-label="Facebook" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/Facebook.svg" alt=""></a></li>
-                <li><a href="#" aria-label="Instagram" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/Instagram.svg" alt=""></a></li>
-                <li><a href="#" aria-label="X" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/X.svg" alt=""></a></li>
-            </ul>
-        </section>
+<header class="header">
+    <a href="/en/index-en.html" class="header__logo" aria-label="Home Jocelyn Bell">
+        <img src="/assets/icons/Logo.svg" alt="Logo Jocelyn Bell">
+    </a>
 
-        <p class="footer__bottom">
-            © 2025 Jocelyn Bell – Project created by Estelle Coulon as part of an individual S1 project at the MMI department of Montbéliard
-        </p>
+    <a href="/fr/liste-matilda.html" class="header__logo"  aria-label="liste des Matilda">
+                <img src="/assets/icons/icons-24x24/Globe.svg" alt="Logo Jocelyn Bell">
+    </a>
 
-    </div>
-</footer>
+    <h3 class="header__title">Jocelyn Bell</h3>
+
+    <button class="header__menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+            <li><a href="/en/matilda.html">Jocelyn Bell</a></li>
+            <li><a href="/en/book.html">Astronomy, the essentials made simple</a></li>
+            <li><a href="/en/pulsar.html">Pulsars</a></li>
+            <li><a href="/en/film.html">Interstellar</a></li>
+            <li><a href="/en/matilda-list.html" aria-current="page">Matilda</a></li>
         </ul>
         <ul>
             <li><a href="/en/film-list.html">Related Films</a></li>
-            <li><a href="/en/other-projects.html">Other Projects</a></li>
+            <li><a href="/en/other-projects.html">Other projects</a></li>
         </ul>
     </nav>
 </header>
@@ -52,18 +52,18 @@
 
     <section class="hero">
 
-      <div class="hero__content">
-        <img src="/assets/img/head/liste-matilda.webp" alt="List of forgotten female scientists" class="hero__portrait">
+        <div class="hero__content">
+            <img src="/assets/img/head/liste-matilda.webp" alt="List of forgotten female scientists" class="hero__portrait">
 
-        <h1>The list of "Matildas"</h1>
-        <h3>These forgotten female scientists</h3>
+            <h1>The list of "Matilda"</h1>
+            <h3>These forgotten female scientists</h3>
 
-        <p class="hero__subtitle">
-          These female scientists whose revolutionary discoveries were attributed to their male colleagues. Discover their stories and the impact of the phenomenon called the Matilda effect on scientific recognition.
-        </p>
+            <p class="hero__subtitle">
+                These female scientists whose revolutionary discoveries were attributed to their male colleagues. Discover their stories and the impact of the phenomenon called the Matilda effect on scientific recognition.
+            </p>
 
-        <a href="/en/matilda.html" class="btn btn--primary">Discover Their Story</a>
-      </div>
+            <a href="/en/matilda.html" class="btn btn--primary">Discover their story</a>
+        </div>
     </section>
 
     <section class="card-list__matilda" role="list" aria-label="List of female scientists victims of the Matilda effect">
@@ -72,19 +72,19 @@
             <h2>Nettie Stevens</h2>
             <p>Sex chromosomes</p>
             <p>1905</p>
-            <p>Overshadowed by Edmund Wilson</p>
+            <p>Eclipsed by Edmund Wilson</p>
         </article>
 
         <article class="card__matilda" role="listitem">
             <h2>Lise Meitner</h2>
             <p>Nuclear fission</p>
             <p>1938</p>
-            <p>Nobel awarded to Otto Hahn alone</p>
+            <p>Nobel given to Otto Hahn alone</p>
         </article>
 
         <article class="card__matilda" role="listitem">
             <h2>Rosalind Franklin</h2>
-            <p>DNA structure</p>
+            <p>Structure of DNA</p>
             <p>1952</p>
             <p>Work used without her consent</p>
         </article>
@@ -93,14 +93,14 @@
             <h2>Chien-Shiung Wu</h2>
             <p>Non-conservation of parity</p>
             <p>1956</p>
-            <p>Nobel attributed to her male colleagues</p>
+            <p>Nobel awarded to her male colleagues</p>
         </article>
 
         <article class="card__matilda" role="listitem">
             <h2>Jocelyn Bell Burnell</h2>
             <p>Discovery of pulsars</p>
             <p>1967</p>
-            <p>Nobel attributed to her thesis supervisor</p>
+            <p>Nobel awarded to her thesis supervisor</p>
         </article>
 
     </section>
@@ -120,42 +120,42 @@
 </main>
 
 <footer class="footer">
-    <div class="footer-content">
+    <div class="footer__content">
 
-        <div class="footer-brand">
+        <section class="footer__section">
             <img src="/assets/icons/Logo.svg" alt="Logo Jocelyn Bell">
-            <p class="footer-title">Jocelyn Bell</p>
-        </div>
+            <h3>Jocelyn Bell</h3>
+        </section>
 
-        <div class="footer-col">
-            <p class="footer-title">Useful Links</p>
+        <section class="footer__section">
+            <h3>Useful links</h3>
             <ul>
                 <li><a href="/en/about.html">About</a></li>
                 <li><a href="/en/contact.html">Contact</a></li>
                 <li><a href="/en/glossary.html">Glossary</a></li>
-                <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Legal Notice</a></li>
+                <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Legal notice</a></li>
             </ul>
-        </div>
+        </section>
 
-        <div class="footer-col">
-            <p class="footer-title">Educational Project</p>
+        <section class="footer__section">
+            <h3>Educational project</h3>
             <ul>
                 <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">MMI Department of Montbéliard</a></li>
                 <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Marie & Louis Pasteur University</a></li>
             </ul>
-        </div>
+        </section>
 
-        <div class="footer-col">
-            <p class="footer-title">Social Media</p>
-            <ul class="social">
+        <section class="footer__section">
+            <h3>Social networks</h3>
+            <ul class="footer__social">
                 <li><a href="#" aria-label="Facebook" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/Facebook.svg" alt=""></a></li>
                 <li><a href="#" aria-label="Instagram" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/Instagram.svg" alt=""></a></li>
                 <li><a href="#" aria-label="X" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/X.svg" alt=""></a></li>
             </ul>
-        </div>
+        </section>
 
-        <p class="footer-bottom">
-            © 2025 Jocelyn Bell – Project completed by Estelle Coulon as part of an individual S1 project at the MMI Department of Montbéliard
+        <p class="footer__bottom">
+            © 2025 Jocelyn Bell – Project completed by Estelle Coulon as part of an individual S1 project at the MMI department of Montbéliard
         </p>
 
     </div>
@@ -165,4 +165,3 @@
 
 </body>
 </html>
-

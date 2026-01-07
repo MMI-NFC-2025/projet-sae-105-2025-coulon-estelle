@@ -10,18 +10,18 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="/assets/favicon/site.webmanifest">
 
-    <meta name="description" content="Discover other projects by MMI students about other Matilda figures.">
+    <meta name="description" content="Discover other MMI student projects about other Matilda figures.">
     <link rel="stylesheet" href="/src/css/style.css">
 </head>
 
 <body>
 
 <header class="header">
-    <a href="/index-en.html" class="header__logo" aria-label="Home">
+    <a href="/en/index-en.html" class="header__logo" aria-label="Home Jocelyn Bell">
         <img src="/assets/icons/Logo.svg" alt="Logo Jocelyn Bell">
     </a>
 
-    <a href="/fr/autre-projets.html" class="header__logo"  aria-label="version française">
+    <a href="/fr/autre-projets.html" class="header__logo" aria-label="Home Jocelyn Bell">
         <img src="/assets/icons/icons-24x24/Globe.svg" alt="Logo Jocelyn Bell">
     </a>
 
@@ -33,7 +33,7 @@
         <span></span>
     </button>
 
-    <nav id="main-nav" class="nav" aria-label="Main navigation">
+    <nav class="nav" id="main-nav" aria-label="Main navigation">
         <ul>
             <li><a href="/en/matilda.html">Jocelyn Bell</a></li>
             <li><a href="/en/book.html">Astronomy, Simply Essential</a></li>
@@ -51,24 +51,23 @@
 <main class="page-wrap">
 
     <section class="hero">
+        <div class="hero__content">
+            <img src="/assets/img/head/autres-projet.webp" alt="Other MMI projects" class="hero__portrait">
 
-      <div class="hero__content">
-        <img src="/assets/img/head/autres-projet.webp" alt="Other MMI projects" class="hero__portrait">
+            <h1>Other Projects</h1>
+            <h3>Matilda in the MMI Department</h3>
 
-        <h1>Other Projects</h1>
-        <h3>Matilda in the MMI Department</h3>
+            <p class="hero__subtitle">
+                Other MMI students have created websites about other female scientists victims of the Matilda effect. Explore these inspiring projects and discover other stories of women's contributions to science.
+            </p>
 
-        <p class="hero__subtitle">
-          Other MMI students have created websites about other women scientists victims of the Matilda effect. Explore these inspiring projects and discover other stories of female contributions to science.
-        </p>
-
-        <a href="#projects" class="btn btn--primary">Discover Projects</a>
-      </div>
+            <a href="#projets" class="btn btn--primary">Discover Projects</a>
+        </div>
     </section>
 
-    <section class="cards__films" role="region" aria-label="Gallery of other projects">
+    <section class="projects__gallery" role="region" aria-label="Gallery of other projects">
 
-        <article class="cards__films__item">
+        <article class="project__item">
             <img src="/assets/img/Autre-Projets/Radiance.webp" alt="Radiance project logo" loading="lazy">
             <div>
                 <h2>Radiance</h2>
@@ -76,7 +75,7 @@
             </div>
         </article>
 
-        <article class="cards__films__item">
+        <article class="project__item">
             <img src="/assets/img/Autre-Projets/Etoiles-Oubliees.webp" alt="Forgotten Stars project logo" loading="lazy">
             <div>
                 <h2>Forgotten Stars</h2>
@@ -84,7 +83,7 @@
             </div>
         </article>
 
-        <article class="cards__films__item">
+        <article class="project__item">
             <img src="/assets/img/Autre-Projets/ADA.webp" alt="ADA project logo" loading="lazy">
             <div>
                 <h2>ADA</h2>
@@ -92,7 +91,7 @@
             </div>
         </article>
 
-        <article class="cards__films__item">
+        <article class="project__item">
             <img src="/assets/img/Autre-Projets/AQITA.webp" alt="AQITA project logo" loading="lazy">
             <div>
                 <h2>AQITA</h2>
@@ -100,31 +99,31 @@
             </div>
         </article>
 
-        <article class="cards__films__item">
-            <img src="/assets/img/Autre-Projets/Empreinte.webp" alt="Imprint project logo" loading="lazy">
+        <article class="project__item">
+            <img src="/assets/img/Autre-Projets/Empreinte.webp" alt="Empreinte project logo" loading="lazy">
             <div>
-                <h2>Imprint</h2>
+                <h2>Empreinte</h2>
                 <p>Chouhib Yanis</p>
             </div>
         </article>
 
-        <article class="cards__films__item">
+        <article class="project__item">
             <img src="/assets/img/Autre-Projets/Marie-Meurdrac.webp" alt="Marie Meurdrac project logo" loading="lazy">
             <div>
-                <h2>Marie Meurdrac: The Essence of a Woman of Science</h2>
+                <h2>Marie Meurdrac: The Essence of a Female Scientist</h2>
                 <p>Sittler Inès</p>
             </div>
         </article>
 
-        <article class="cards__films__item">
-            <img src="/assets/img/Autre-Projets/Empreinte-Feminines.webp" alt="Female Imprints in Science project logo" loading="lazy">
+        <article class="project__item">
+            <img src="/assets/img/Autre-Projets/Empreinte-Feminines.webp" alt="Feminine Footprints in Science project logo" loading="lazy">
             <div>
-                <h2>Female Imprints in Science</h2>
+                <h2>Feminine Footprints in Science</h2>
                 <p>Thilor Sambe Maman</p>
             </div>
         </article>
 
-        <article class="cards__films__item">
+        <article class="project__item">
             <img src="/assets/img/Autre-Projets/Devlace.webp" alt="Devlace project logo" loading="lazy">
             <div>
                 <h2>Devlace</h2>
@@ -136,12 +135,12 @@
 
     <section class="links">
         <a href="/en/matilda.html" class="btn">
-            Learn more about Jocelyn Bell
+            Learn More About Jocelyn Bell
             <img src="/assets/icons/icons-29x29/External%20Link.svg" alt="">
         </a>
 
         <a href="/en/glossary.html" class="btn btn2">
-            Consult the glossary
+            Consult the Glossary
             <img src="/assets/icons/icons-29x29/External%20Link.svg" alt="">
         </a>
     </section>
@@ -149,42 +148,42 @@
 </main>
 
 <footer class="footer">
-    <div class="footer-content">
+    <div class="footer__content">
 
-        <div class="footer-brand">
+        <section class="footer__section">
             <img src="/assets/icons/Logo.svg" alt="Logo Jocelyn Bell">
-            <p class="footer-title">Jocelyn Bell</p>
-        </div>
+            <h3>Jocelyn Bell</h3>
+        </section>
 
-        <div class="footer-col">
-            <p class="footer-title">Useful Links</p>
+        <section class="footer__section">
+            <h3>Useful Links</h3>
             <ul>
                 <li><a href="/en/about.html">About</a></li>
                 <li><a href="/en/contact.html">Contact</a></li>
                 <li><a href="/en/glossary.html">Glossary</a></li>
                 <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Legal Notice</a></li>
             </ul>
-        </div>
+        </section>
 
-        <div class="footer-col">
-            <p class="footer-title">Educational Project</p>
+        <section class="footer__section">
+            <h3>Educational Project</h3>
             <ul>
                 <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">MMI Department of Montbéliard</a></li>
                 <li><a href="https://www.iut-nfc.univ-fcomte.fr/" rel="noopener noreferrer" target="_blank">Marie & Louis Pasteur University</a></li>
             </ul>
-        </div>
+        </section>
 
-        <div class="footer-col">
-            <p class="footer-title">Social Networks</p>
-            <ul class="social">
+        <section class="footer__section">
+            <h3>Social Networks</h3>
+            <ul class="footer__social">
                 <li><a href="#" aria-label="Facebook" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/Facebook.svg" alt=""></a></li>
                 <li><a href="#" aria-label="Instagram" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/Instagram.svg" alt=""></a></li>
                 <li><a href="#" aria-label="X" rel="noopener noreferrer"><img src="/assets/icons/icons-29x29/X.svg" alt=""></a></li>
             </ul>
-        </div>
+        </section>
 
-        <p class="footer-bottom">
-            © 2025 Jocelyn Bell – Project completed by Estelle Coulon as part of an individual S1 project at the MMI Department of Montbéliard
+        <p class="footer__bottom">
+            © 2025 Jocelyn Bell – Project created by Estelle Coulon as part of an individual S1 project in the MMI Department of Montbéliard
         </p>
 
     </div>
@@ -194,4 +193,3 @@
 
 </body>
 </html>
-
