@@ -18,12 +18,13 @@
   padding: 0;
 }
 
-/* image libre, NON rognée */
+/* image libre, NON rognée : affiche l’image en entier */
 .block-img{
-  width: 100%;
-  height: auto;          /* important : pas de rognage */
-  object-fit: unset;     /* retire le cover */
   display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;   /* l’image reste entière */
+  object-position: center;
 
   border-radius: 0;
   border: none;

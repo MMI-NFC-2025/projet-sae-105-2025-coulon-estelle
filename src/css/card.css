@@ -100,7 +100,7 @@
 .cards__films__item:hover{
   transform: translateY(-2px);
   border-color: color-mix(in srgb, var(--pink-candy) 40%, transparent);
-  box-shadow: 0 22px 70px color-mix(in srgb, black 48%, transparent), 0 0 26px color-mix(in srgb, var(--purple) 40%, transparent);
+
 }
 
 /* Liens cliquables */
@@ -261,12 +261,15 @@
 
 /* icône en haut à gauche (petite, comme sur l'image) */
 .cards__infos__item img{
-    width: 28px;
-    height: 28px;
-    display: block;
-    margin: 0 0 14px;
-    
-    filter: invert(1) hue-rotate(180deg) saturate(1.2);
+  width: 100%;
+  height: auto;
+  max-width: 140px;
+  display: block;
+  margin: 0 0 14px;
+
+  object-fit: contain;
+  border-radius: 10px;
+  filter: invert(1) hue-rotate(180deg) saturate(1.2);
 }
 
 /* titre */
@@ -299,64 +302,6 @@
   margin-top: 0;
 }
 
-
-/* =========================================================
-   TIMELINE MATILDA — CSS COMPLET (points à DROITE de la ligne)
-   À copier-coller en remplacement de l’ancien
-   ========================================================= */
-
-/* ===== CONTENEUR ===== */
-.card-list__matilda{
-  position: relative;
-  width: min(520px, 100%);
-  margin: 28px auto 0;
-
-  display: grid;
-  gap: 28px;
-
-  padding: 8px 0 48px;
-}
-
-/* ===== LIGNE ===== */
-.card-list__matilda::before{
-  content:"";
-  position: absolute;
-  top: 0;
-  bottom: 14px;
-
-  left: 22px;
-  width: 3px;
-  border-radius: 999px;
-
-  background: linear-gradient(
-    180deg,
-    color-mix(in srgb, var(--pink-candy) 75%, transparent) 0%,
-    color-mix(in srgb, var(--purple) 65%, transparent) 60%,
-    color-mix(in srgb, var(--pink-candy) 75%, transparent) 100%
-  );
-
-  box-shadow: 0 0 18px color-mix(in srgb, var(--pink-candy) 25%, transparent);
-}
-
-/* ===== FLÈCHE collée à la ligne ===== */
-.card-list__matilda::after{
-  content:"";
-  position: absolute;
-
-  /* centre du triangle sur la ligne */
-  left: 22px;
-  bottom: -2px;
-  transform: translateX(-50%);
-
-  width: 0;
-  height: 0;
-
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-top: 12px solid color-mix(in srgb, var(--pink-candy) 85%, transparent);
-
-  filter: drop-shadow(0 0 10px color-mix(in srgb, var(--pink-candy) 25%, transparent));
-}
 
 /* =========================================================
    TIMELINE MATILDA — VERSION CORRIGÉE
@@ -513,7 +458,7 @@
 .cards__principal-content,
 .cards__films__item{
   border-radius: 18px;
-  background: transparent;
+  background: color-mix(in srgb, var(--dark-blue) 55%, transparent);
   overflow: hidden;
 
   box-shadow:
@@ -536,7 +481,7 @@
   display: block;
 
   object-fit: contain;  /* pas de crop */
-  background: color-mix(in srgb, var(--purple) 8%, transparent);
+  background: color-mix(in srgb, var(--dark-blue) 55%, transparent);
 
   filter: saturate(1.05) contrast(1.04);
 }
@@ -545,7 +490,7 @@
 .cards__principal-content div,
 .cards__films__item div{
   padding: 16px 18px 20px;
-  background: color-mix(in srgb, var(--purple) 10%, transparent);
+  background: color-mix(in srgb, var(--dark-blue) 65%, transparent);
 
   display: grid;
   grid-template-columns: 1fr auto;
@@ -554,6 +499,11 @@
    "desc  desc";
   column-gap: 12px;
   row-gap: 12px;
+}
+
+/* Uniformiser le fond des cards__films (même teinte partout) */
+.cards__films__item div{
+  background: transparent;
 }
 
 /* titre */

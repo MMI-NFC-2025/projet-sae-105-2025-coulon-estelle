@@ -34,14 +34,14 @@
 /* Titre AU MILIEU (entre logo gauche et globe) */
 .header__title{
   margin: 0;
-  flex: 1;                 /* prend l’espace entre les blocs */
+  flex: 1;                 /* prend l'espace entre les blocs */
   text-align: center;       /* centré dans cet espace */
   white-space: nowrap;      /* évite les retours à la ligne */
   overflow: hidden;
   text-overflow: ellipsis;
 
   font-family: var(--font-family-audiowide);
-  font-size: 26px;
+  font-size: 14px;
   line-height: 1;
   letter-spacing: 0.04em;
   color: var(--pink-candy);

@@ -47,29 +47,6 @@
 
 
 /* =========================================================
-   IMAGES D’ARTICLE (block-img) — comme sur ta capture
-   (largeur full, hauteur fixe, rognage propre, gros arrondi)
-   ========================================================= */
-
-.block-img{
-  width: 100%;
-  height: 210px;                 /* taille proche de ta capture */
-  display: block;
-  object-fit: cover;
-  object-position: center;
-
-  border-radius: 18px;
-  overflow: hidden;
-
-  margin: 0 0 14px;
-
-  border: 1px solid color-mix(in srgb, var(--purple) 25%, transparent);
-  box-shadow:
-    0 14px 40px color-mix(in srgb, var(--black-blue) 70%, transparent),
-    0 0 18px color-mix(in srgb, var(--purple) 18%, transparent);
-}
-
-/* =========================================================
    VIDEO (video-content) — même “carte média” que l’image
    (largeur full, hauteur fixe, arrondi, rognage)
    ========================================================= */
